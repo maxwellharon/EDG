@@ -1,6 +1,12 @@
 /********** Template CSS **********/
+/********** Customized Eden Destiny Group Color Scheme **********/
 :root {
+    --bs-primary: #1E5631;
+    /* Deep green – trust, growth, sustainability */
+    --bs-secondary: #4C9A2A;
+    /* Vibrant green – energy, youth, empowerment */
     --bs-tertiary: #797E88;
+    /* Neutral grey, unchanged */
 }
 
 .back-to-top {
