@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Our Team - Eden Destiny Group</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="EDGteam,RoselyneOlewe,ElizabethMutheu,HezekiaWatta,JoabOkore,LisaOndiek,KraigOchieng,BernardNyasanga" name="keywords">
-    <meta content="Meet the dedicated experts behind Eden Destiny Group. Our team drives social enterprise, creative economy, wellness and education in Kenya." name="description">
+    <meta content="EDGteam, Roselyne Olewe, Elizabeth Mutheu, Hezekia Watta, Joab Okore, Lisa Ondiek, Kraig Ochieng, Bernard Nyasanga" name="keywords">
+    <meta content="Meet the multi‑disciplinary team behind Eden Destiny Group – experts in social enterprise, creative economy, wellness, education, finance, data science, and community mobilisation." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -29,6 +29,52 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Additional styling for team accordion -->
+    <style>
+        .team-card {
+            border: none;
+            border-radius: 0;
+            transition: box-shadow 0.3s;
+        }
+        .team-card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .team-card .card-header {
+            background: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            cursor: pointer;
+            padding: 1.5rem;
+        }
+        .team-card .card-header .team-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        .team-card .card-header h5 {
+            font-weight: 700;
+        }
+        .team-card .card-body {
+            padding: 1.5rem;
+            border-top: 2px solid var(--bs-primary);
+        }
+        .team-card .card-body p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: var(--bs-primary);
+            color: #fff;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -144,132 +190,187 @@
             <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <p class="section-title bg-white text-center text-primary px-3">The People Behind EDG</p>
                 <h1 class="display-6 mb-4">Meet Our Dedicated Experts</h1>
-                <p class="mb-5">Eden Destiny Group is powered by a passionate, multi-disciplinary team committed to driving the SDGs through social enterprise. Each member brings unique expertise, from finance and architecture to creative direction and community mobilisation.</p>
+                <p class="mb-5">Eden Destiny Group is powered by a passionate, multi‑disciplinary team committed to driving the SDGs through social enterprise. Tap any profile to discover their full story and expertise.</p>
             </div>
         </div>
     </div>
     <!-- Team Intro End -->
 
-    <!-- Team Carousel Start -->
+    <!-- Team Grid Start -->
     <div class="container-fluid pb-5">
         <div class="container">
-            <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay="0.3s">
-                <!-- Roselyne Olewe -->
-                <div class="team-item d-flex h-100 p-4 mx-1">
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/team-1.jpg" alt="Roselyne Olewe">
-                        <h3>Roselyne Olewe</h3>
-                        <span>Founder & MD</span>
-                    </div>
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <!-- Elizabeth Mutheu -->
-                <div class="team-item d-flex h-100 p-4 mx-1">
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/team-2.jpg" alt="Elizabeth Mutheu">
-                        <h3>Elizabeth Mutheu</h3>
-                        <span>Risk Finance & Compliance</span>
-                    </div>
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-youtube"></i></a>
+            <div class="row g-4">
+                <!-- 1. Roselyne Olewe -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-header d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#bio1" aria-expanded="false" aria-controls="bio1">
+                            <img src="img/rose.png" alt="Roselyne Olewe" class="team-img">
+                            <div>
+                                <h5 class="mb-1">Roselyne Olewe</h5>
+                                <p class="text-muted mb-0">Founder & Managing Director</p>
+                            </div>
+                            <span class="ms-auto"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="bio1" class="collapse">
+                            <div class="card-body">
+                                <p><strong>About Roselyne</strong></p>
+                                <p>Roselyne is a seasoned professional with 30 years experience in the private sector in blue‑chip FMCGs and the NGO sector. Her expertise spans Brand Management, Advertising, Programme Management, Business Development, Consortium Management, Government Relations, Policy and Advocacy, Labour Rights, Disability Inclusion, and the Creative Economy.</p>
+                                <p>She currently serves as the Executive Director of Eden Destiny Group Ltd and is a Board Member of the Talanta Mtaani Youth Empowerment Programme. A passionate mental health advocate, she drives EDG’s holistic wellness initiatives.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Hezekia Watta -->
-                <div class="team-item d-flex h-100 p-4 mx-1">
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/team-3.jpg" alt="Hezekia Watta">
-                        <h3>Hezekia Watta</h3>
-                        <span>Creative Director</span>
-                    </div>
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <!-- Lisa Beryl Ondiek -->
-                <div class="team-item d-flex h-100 p-4 mx-1">
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/team-4.jpg" alt="Lisa Beryl Ondiek">
-                        <h3>Lisa Beryl Ondiek</h3>
-                        <span>Program Director</span>
-                    </div>
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-youtube"></i></a>
+
+                <!-- 2. Elizabeth Mutheu Mutemi -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.15s">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-header d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#bio2" aria-expanded="false" aria-controls="bio2">
+                            <img src="img/bessy.png" alt="Elizabeth Mutheu" class="team-img">
+                            <div>
+                                <h5 class="mb-1">Elizabeth Mutheu Mutemi</h5>
+                                <p class="text-muted mb-0">Risk Finance & Compliance</p>
+                            </div>
+                            <span class="ms-auto"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="bio2" class="collapse">
+                            <div class="card-body">
+                                <p><strong>About Elizabeth</strong></p>
+                                <p>Elizabeth is a seasoned Finance Executive and Strategic Leader, driving financial stewardship and growth in complex environments. She leverages expertise in financial governance, risk management, grants compliance, and results‑based management.</p>
+                                <p>With a proven track record of advising leadership and boards, she excels in strategic planning, program scale‑up, and team building. Proficient in Microsoft Dynamics Navision, QuickBooks, and ZOHO, she is committed to transparency, accountability, and organisational sustainability.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Joab Okore -->
-                <div class="team-item d-flex h-100 p-4 mx-1">
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/team-5.jpg" alt="Joab Okore">
-                        <h3>Joab Okore</h3>
-                        <span>Cultural Editor</span>
-                    </div>
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <!-- Bernard Nyasanga -->
-                <div class="team-item d-flex h-100 p-4 mx-1">
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/team-6.jpg" alt="Bernard Nyasanga">
-                        <h3>Bernard Nyasanga</h3>
-                        <span>Community Mobilizer</span>
-                    </div>
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-youtube"></i></a>
+
+                <!-- 3. Hezekia Watta -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-header d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#bio3" aria-expanded="false" aria-controls="bio3">
+                            <img src="img/hezekia.png" alt="Hezekia Watta" class="team-img">
+                            <div>
+                                <h5 class="mb-1">Hezekia Watta</h5>
+                                <p class="text-muted mb-0">Creative Director</p>
+                            </div>
+                            <span class="ms-auto"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="bio3" class="collapse">
+                            <div class="card-body">
+                                <p><strong>About Hezekia</strong></p>
+                                <p>Hezekia Watta is a visionary creative leader with over 15 years of experience in branding, multimedia production, and strategic communication across East Africa. He has led creative campaigns for corporates, NGOs, government institutions, and international organisations.</p>
+                                <p>His expertise spans creative strategy, branding, and multimedia production. He combines creativity and technology to transform ideas into powerful experiences.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Kristian Daniel Onyango -->
-                <div class="team-item d-flex h-100 p-4 mx-1">
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/team-7.jpg" alt="Kristian Daniel Onyango">
-                        <h3>Kristian Daniel</h3>
-                        <span>Architecture & Creative</span>
-                    </div>
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-youtube"></i></a>
+
+                <!-- 4. Lisa Beryl Ondiek -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.25s">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-header d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#bio4" aria-expanded="false" aria-controls="bio4">
+                            <img src="img/lisa.png" alt="Lisa Beryl Ondiek" class="team-img">
+                            <div>
+                                <h5 class="mb-1">Lisa Beryl Ondiek</h5>
+                                <p class="text-muted mb-0">Program Director</p>
+                            </div>
+                            <span class="ms-auto"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="bio4" class="collapse">
+                            <div class="card-body">
+                                <p><strong>About Lisa</strong></p>
+                                <p>Lisa is an experienced Program Manager with a demonstrated history of working in the non‑profit organisation management industry. She is skilled in Microsoft Word, Accounting, Java, Financial Accounting, and Teamwork.</p>
+                                <p>A strong program and project management professional, she holds a Bachelor of Commerce (BCom) focused on Business Administration and Management, with an entrepreneurship specialisation from Strathmore University.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Kraig Dixon Ochieng -->
-                <div class="team-item d-flex h-100 p-4 mx-1">
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/team-8.jpg" alt="Kraig Dixon Ochieng">
-                        <h3>Kraig Dixon Ochieng</h3>
-                        <span>Data Scientist | Data Analyst</span>
+
+                <!-- 5. Joab Okore -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-header d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#bio5" aria-expanded="false" aria-controls="bio5">
+                            <img src="img/joab.png" alt="Joab Okore" class="team-img">
+                            <div>
+                                <h5 class="mb-1">Joab Okore</h5>
+                                <p class="text-muted mb-0">Cultural Editor</p>
+                            </div>
+                            <span class="ms-auto"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="bio5" class="collapse">
+                            <div class="card-body">
+                                <p><strong>About Joab</strong></p>
+                                <p>Joab Okore made history as the first male from Kisumu to receive the Presidential Head of State Commendation (HSC) award, recognised for his COVID‑19 response efforts and philanthropic work at the 2021 Mashujaa Day celebrations in Kirinyaga County.</p>
+                                <p>Through his company, he mobilised resources to distribute masks and sanitisers to schools and public gatherings. Joab champions peace, education, and cultural preservation, stressing the importance of local languages and traditions in alignment with Article 7 of the Constitution.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#!"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <!-- 6. Bernard Nyasanga -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.35s">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-header d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#bio6" aria-expanded="false" aria-controls="bio6">
+                            <img src="img/add.png" alt="Bernard Nyasanga" class="team-img">
+                            <div>
+                                <h5 class="mb-1">Bernard Nyasanga</h5>
+                                <p class="text-muted mb-0">Community Mobilizer</p>
+                            </div>
+                            <span class="ms-auto"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="bio6" class="collapse">
+                            <div class="card-body">
+                                <p><strong>About Bernard</strong></p>
+                                <p>Bernard is an accomplished educationist and community mobiliser with over ten years of experience since 2010. He has served across Nakuru, Kisumu, Kajiado, Dubai (UAE), and currently Nairobi County.</p>
+                                <p>He specialises in quality assurance, curriculum development, and school management within both local and international education systems. Bernard holds an Honours Degree in Linguistics and Sociology (1996) and a Postgraduate Diploma in Education from Egerton University (2001).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Kristian Daniel Onyango -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-header d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#bio7" aria-expanded="false" aria-controls="bio7">
+                            <img src="img/kristian.png" alt="Kristian Daniel Onyango" class="team-img">
+                            <div>
+                                <h5 class="mb-1">Kristian Daniel Onyango</h5>
+                                <p class="text-muted mb-0">Architecture & Creative</p>
+                            </div>
+                            <span class="ms-auto"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="bio7" class="collapse">
+                            <div class="card-body">
+                                <p><strong>About Kristian</strong></p>
+                                <p>Kristian is a detail‑oriented Graduate Architect specialising in design and project management. He leverages his architectural skills to drive collaborative projects.</p>
+                                <p>As a Recording Artist and Vocal Post‑Production Engineer, he excels in audio production (FL Studio), workflow optimisation, and creative direction. His dual pursuits in architecture and music enhance conceptualisation and innovative problem‑solving. He holds Bachelor of Architecture and Bachelor of Architectural Studies degrees from the University of Nairobi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Kraig Dixon Ochieng -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.45s">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-header d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#bio8" aria-expanded="false" aria-controls="bio8">
+                            <img src="img/kraig.png" alt="Kraig Dixon Ochieng" class="team-img">
+                            <div>
+                                <h5 class="mb-1">Kraig Dixon Ochieng</h5>
+                                <p class="text-muted mb-0">Data Scientist & Data Analyst</p>
+                            </div>
+                            <span class="ms-auto"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="bio8" class="collapse">
+                            <div class="card-body">
+                                <p><strong>About Kraig</strong></p>
+                                <p>Kraig is a skilled Data Scientist specialising in building scalable machine learning solutions, predictive models, and AI agent systems. He drives production deployments, explainable AI, and data visualisation.</p>
+                                <p>His work spans healthcare integrations, workflow automation, and cloud deployments. Kraig graduated with a First Class Honours, BS Computer Science from the University of Nairobi.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Team Carousel End -->
+    <!-- Team Grid End -->
 
     <!-- Newsletter Start -->
     <div class="container-fluid bg-primary py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -361,30 +462,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
-    <!-- Initialize Team Carousel -->
-    <script>
-    $(document).ready(function(){
-        $(".team-carousel").owlCarousel({
-            autoplay: true,
-            smartSpeed: 1000,
-            margin: 20,
-            dots: false,
-            loop: true,
-            nav: true,
-            navText: [
-                '<i class="bi bi-arrow-left"></i>',
-                '<i class="bi bi-arrow-right"></i>'
-            ],
-            responsive: {
-                0:    { items: 1 },
-                576:  { items: 2 },
-                768:  { items: 3 },
-                992:  { items: 4 }
-            }
-        });
-    });
-    </script>
 </body>
 
 </html>
