@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Retail Destiny – Shop Wellness Products | Eden Destiny Group</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="retail, ecommerce, natural wellness, goat milk soap, face mask, body scrub, Kenya" name="keywords">
+    <meta content="Shop sustainable wellness products from Eden Destiny Group's Retail Destiny. Nourish your skin with our goat milk range and natural body care, all made with love." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Additional custom styles for retail page -->
+    <style>
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        .product-img {
+            height: 220px;
+            object-fit: cover;
+        }
+        .cart-badge, .wishlist-badge {
+            position: relative;
+        }
+        .cart-badge::after, .wishlist-badge::after {
+            content: attr(data-count);
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background: var(--bs-secondary);
+            color: #fff;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pagination .page-link {
+            color: var(--bs-primary);
+            border: none;
+            border-radius: 50%;
+            margin: 0 3px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pagination .page-link.active, .pagination .page-link:hover {
+            background: var(--bs-primary);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-4 text-center text-lg-start">
+                <a href="index.html">
+                    <h1 class="display-5 text-primary m-0">Eden Destiny Group</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-phone-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Call Us</h6>
+                                <span class="text-white">+254 716 238 875</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-envelope-open text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Mail Us</h6>
+                                <span class="text-white">info@edendestinygroup.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-map-marker-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Address</h6>
+                                <span class="text-white">P.O. Box 74637-00200, Nairobi, KE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-secondary px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg bg-primary navbar-dark px-4 py-lg-0">
+                <h4 class="d-lg-none m-0">Menu</h4>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav me-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="creative-destiny.html" class="dropdown-item">Creative Destiny</a>
+                                <a href="wellness-destiny.html" class="dropdown-item">Wellness Destiny</a>
+                                <a href="education-destiny.html" class="dropdown-item">Education Destiny</a>
+                                <a href="retail.html" class="dropdown-item active">Retail Destiny</a>
+                            </div>
+                        </div>
+                        <a href="retail.html" class="nav-item nav-link active">Retail</a>
+                        <a href="donation.html" class="nav-item nav-link">Donate</a>
+                        <a href="team.html" class="nav-item nav-link">Our Team</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-none d-lg-flex ms-auto align-items-center">
+                        <!-- Wishlist -->
+                        <a class="btn btn-square btn-dark ms-2 position-relative wishlist-badge" data-bs-toggle="modal" data-bs-target="#wishlistModal" data-count="0" id="wishlistBtn">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <!-- Cart -->
+                        <a class="btn btn-square btn-dark ms-2 position-relative cart-badge" data-bs-toggle="modal" data-bs-target="#cartModal" data-count="0" id="cartBtn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-4">
+            <h1 class="display-3 animated slideInDown">Retail Destiny</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Shop Section -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
+                <h1 class="display-6 mb-4">Nourish Your Body, Naturally</h1>
+                <p class="mb-5">Discover our handcrafted wellness essentials, made with love from natural ingredients. Every purchase supports community development.</p>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="productGrid" class="row g-4">
+                <!-- Products will be dynamically inserted here via JS -->
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5 wow fadeIn">
+                <ul id="pagination" class="pagination justify-content-center">
+                    <!-- dynamically generated -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner py-5">
+        <div class="container">
+            <div class="banner-inner bg-light p-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 py-5 text-center">
+                        <h1 class="display-6 wow fadeIn" data-wow-delay="0.3s">Free Delivery Across Nairobi</h1>
+                        <p class="fs-5 mb-4 wow fadeIn" data-wow-delay="0.5s">Enjoy free doorstep delivery on all orders above KSh 2,000. Your wellness, delivered with care.</p>
+                        <a class="btn btn-primary py-3 px-4" href="#productGrid">Browse Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content rounded-0">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="cartModalLabel"><i class="fas fa-shopping-cart me-2"></i>Your Cart</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="cartItems">
+                    <p class="text-center py-5">Your cart is empty.</p>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-outline-secondary" id="clearCartBtn">Clear Cart</button>
+                    <div>
+                        <span class="me-3 fw-bold">Total: KSh <span id="cartTotal">0</span></span>
+                        <a href="contact.html" class="btn btn-primary">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="wishlistModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="far fa-heart me-2"></i>Your Wishlist</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="wishlistItems">
+                    <p class="text-center py-5">No items in wishlist.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 mb-4">Get Exclusive Wellness Tips & Offers</h1>
+                    <div class="position-relative w-100 mb-2">
+                        <input class="form-control border-0 w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 60px;">
+                        <button type="button" class="btn btn-lg-square shadow-none position-absolute top-0 end-0 mt-2 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <p class="mb-0">No spam, only pure goodness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>P.O. Box 74637-00200, Nairobi, Kenya</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 716 238 875</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@edendestinygroup.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary me-2" href="#!"><i class="fab fa-x-twitter"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="#!"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="creative-destiny.html">Creative Destiny</a>
+                    <a class="btn btn-link" href="education-destiny.html">Education Destiny</a>
+                    <a class="btn btn-link" href="donation.html">Donate</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">08:00 am - 05:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-1.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-2.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-3.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-4.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-5.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-6.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright pt-5">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="fw-semi-bold" href="index.html">Eden Destiny Group Ltd</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>. Distributed by <a class="fw-semi-bold" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Retail Page Functionality -->
+    <script>
+    $(document).ready(function () {
+        // ---------- Product Data ----------
+        const products = [
+            { id: 1, name: "KK Shower Gel", price: 800, image: "img/gallery-1.jpg", desc: "Gentle cleansing with goat milk and honey." },
+            { id: 2, name: "KK Powder Facemask", price: 650, image: "img/gallery-2.jpg", desc: "Brightening turmeric & goat milk powder." },
+            { id: 3, name: "KK Body Scrub", price: 950, image: "img/gallery-3.jpg", desc: "Exfoliate and rejuvenate with natural oats." },
+            { id: 4, name: "KK Face Cream", price: 1200, image: "img/gallery-4.jpg", desc: "Deep hydration with goat milk & shea." },
+            { id: 5, name: "KK Goat Milk", price: 450, image: "img/gallery-5.jpg", desc: "Pure nourishing goat milk soap – 100g." },
+            { id: 6, name: "KK Face Scrub", price: 700, image: "img/gallery-6.jpg", desc: "Gentle exfoliating scrub with aloe." },
+            { id: 7, name: "KK Lip Balm", price: 300, image: "img/gallery-1.jpg", desc: "Moisturizing lip care with honey." },
+            { id: 8, name: "KK Hand Cream", price: 550, image: "img/gallery-2.jpg", desc: "Softening hand cream with goat milk." },
+            { id: 9, name: "KK Bath Salts", price: 850, image: "img/gallery-3.jpg", desc: "Relaxing lavender & goat milk bath salts." },
+            { id: 10, name: "KK Body Lotion", price: 1100, image: "img/gallery-4.jpg", desc: "Lightweight daily moisturizer." },
+            { id: 11, name: "KK Hair Mask", price: 980, image: "img/gallery-5.jpg", desc: "Deep conditioning with coconut & goat milk." },
+            { id: 12, name: "KK Foot Cream", price: 600, image: "img/gallery-6.jpg", desc: "Revitalizing peppermint foot care." }
+        ];
+
+        const itemsPerPage = 6;
+        let currentPage = 1;
+        const cart = JSON.parse(localStorage.getItem('edg_cart')) || [];
+        const wishlist = JSON.parse(localStorage.getItem('edg_wishlist')) || [];
+
+        // Save to localStorage
+        function saveCart() { localStorage.setItem('edg_cart', JSON.stringify(cart)); }
+        function saveWishlist() { localStorage.setItem('edg_wishlist', JSON.stringify(wishlist)); }
+
+        // Update UI counters
+        function updateCounters() {
+            $('#cartBtn').attr('data-count', cart.length);
+            if (cart.length > 0) $('#cartBtn').addClass('cart-badge'); else $('#cartBtn').removeClass('cart-badge');
+            $('#wishlistBtn').attr('data-count', wishlist.length);
+            if (wishlist.length > 0) $('#wishlistBtn').addClass('wishlist-badge'); else $('#wishlistBtn').removeClass('wishlist-badge');
+        }
+
+        // Render products for current page
+        function renderProducts() {
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageProducts = products.slice(start, end);
+            const grid = $('#productGrid');
+            grid.empty();
+
+            pageProducts.forEach(product => {
+                const html = `
+                <div class="col-md-6 col-lg-4 wow fadeIn">
+                    <div class="product-card bg-white h-100 p-3 rounded">
+                        <img src="${product.image}" class="w-100 product-img rounded mb-3" alt="${product.name}">
+                        <h5>${product.name}</h5>
+                        <p class="small text-muted">${product.desc}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">KSh ${product.price}</span>
+                            <div>
+                                <button class="btn btn-sm btn-outline-primary add-to-wishlist" data-id="${product.id}"><i class="far fa-heart"></i></button>
+                                <button class="btn btn-sm btn-primary add-to-cart" data-id="${product.id}"><i class="fas fa-cart-plus me-1"></i>Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+                grid.append(html);
+            });
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(products.length / itemsPerPage);
+            const pagination = $('#pagination');
+            pagination.empty();
+            if (totalPages <= 1) return;
+
+            pagination.append(`<li class="page-item ${currentPage === 1 ? 'disabled' : ''}"><a class="page-link" href="#" data-page="${currentPage - 1}"><i class="bi bi-chevron-left"></i></a></li>`);
+
+            for (let i = 1; i <= totalPages; i++) {
+                pagination.append(`<li class="page-item ${i === currentPage ? 'active' : ''}"><a class="page-link" href="#" data-page="${i}">${i}</a></li>`);
+            }
+
+            pagination.append(`<li class="page-item ${currentPage === totalPages ? 'disabled' : ''}"><a class="page-link" href="#" data-page="${currentPage + 1}"><i class="bi bi-chevron-right"></i></a></li>`);
+        }
+
+        // Cart & Wishlist functions
+        function addToCart(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+            const existing = cart.find(item => item.id === id);
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+            saveCart();
+            updateCounters();
+            renderCartModal();
+            alert(product.name + ' added to cart');
+        }
+
+        function addToWishlist(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+            if (!wishlist.some(item => item.id === id)) {
+                wishlist.push(product);
+                saveWishlist();
+                updateCounters();
+                renderWishlistModal();
+                alert(product.name + ' added to wishlist');
+            } else {
+                alert('Already in wishlist');
+            }
+        }
+
+        function removeFromCart(id) {
+            const index = cart.findIndex(item => item.id === id);
+            if (index !== -1) cart.splice(index, 1);
+            saveCart();
+            updateCounters();
+            renderCartModal();
+            renderProducts();  // refresh product grid (just in case)
+        }
+
+        function removeFromWishlist(id) {
+            const index = wishlist.findIndex(item => item.id === id);
+            if (index !== -1) wishlist.splice(index, 1);
+            saveWishlist();
+            updateCounters();
+            renderWishlistModal();
+        }
+
+        function renderCartModal() {
+            const container = $('#cartItems');
+            if (cart.length === 0) {
+                container.html('<p class="text-center py-5">Your cart is empty.</p>');
+                $('#cartTotal').text('0');
+                return;
+            }
+            let html = '<div class="table-responsive"><table class="table"><thead><tr><th>Product</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr></thead><tbody>';
+            let total = 0;
+            cart.forEach(item => {
+                const subtotal = item.price * item.quantity;
+                total += subtotal;
+                html += `<tr>
+                    <td>${item.name}</td>
+                    <td>KSh ${item.price}</td>
+                    <td>${item.quantity}</td>
+                    <td>KSh ${subtotal}</td>
+                    <td><button class="btn btn-sm btn-danger remove-cart-item" data-id="${item.id}"><i class="fas fa-trash"></i></button></td>
+                </tr>`;
+            });
+            html += '</tbody></table></div>';
+            container.html(html);
+            $('#cartTotal').text(total);
+        }
+
+        function renderWishlistModal() {
+            const container = $('#wishlistItems');
+            if (wishlist.length === 0) {
+                container.html('<p class="text-center py-5">No items in wishlist.</p>');
+                return;
+            }
+            let html = '<div class="row">';
+            wishlist.forEach(item => {
+                html += `<div class="col-6 mb-3">
+                    <div class="d-flex align-items-center">
+                        <img src="${item.image}" alt="${item.name}" class="me-2" style="width:60px;height:60px;object-fit:cover;">
+                        <div>
+                            <p class="mb-0 fw-bold">${item.name}</p>
+                            <small>KSh ${item.price}</small>
+                            <button class="btn btn-sm btn-danger mt-1 remove-wishlist-item" data-id="${item.id}">Remove</button>
+                        </div>
+                    </div>
+                </div>`;
+            });
+            html += '</div>';
+            container.html(html);
+        }
+
+        // Event Handlers
+        $(document).on('click', '.add-to-cart', function(e) {
+            e.preventDefault();
+            const id = parseInt($(this).data('id'));
+            addToCart(id);
+        });
+
+        $(document).on('click', '.add-to-wishlist', function(e) {
+            e.preventDefault();
+            const id = parseInt($(this).data('id'));
+            addToWishlist(id);
+        });
+
+        $(document).on('click', '.remove-cart-item', function() {
+            const id = parseInt($(this).data('id'));
+            removeFromCart(id);
+        });
+
+        $(document).on('click', '.remove-wishlist-item', function() {
+            const id = parseInt($(this).data('id'));
+            removeFromWishlist(id);
+        });
+
+        $('#clearCartBtn').click(function() {
+            cart.length = 0;
+            saveCart();
+            updateCounters();
+            renderCartModal();
+        });
+
+        $(document).on('click', '#pagination .page-link', function(e) {
+            e.preventDefault();
+            const page = parseInt($(this).data('page'));
+            if (page && page >= 1 && page <= Math.ceil(products.length / itemsPerPage)) {
+                currentPage = page;
+                renderProducts();
+                $('html, body').animate({ scrollTop: $('#productGrid').offset().top - 100 }, 200);
+            }
+        });
+
+        // Initialize
+        renderProducts();
+        updateCounters();
+        renderCartModal();
+        renderWishlistModal();
+    });
+    </script>
+</body>
+
+</html>
