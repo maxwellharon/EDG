@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Creative Destiny - Eden Destiny Group</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="creativedestiny, creative economy, artist management, A&R, Kenya, Talanta Mtaani, Oxic Entertainment" name="keywords">
-    <meta content="Creative Destiny by Eden Destiny Group nurtures the creative economy in Africa through artist management, business development services, and content production." name="description">
+    <meta content="creativedestiny, creative economy, artist management, A&R, Kenya, Talanta Mtaani, Oxic Entertainment, Boda Boda TV Drama" name="keywords">
+    <meta content="Creative Destiny by Eden Destiny Group nurtures the creative economy in Africa through artist management, business development services, and content production including the BODA BODA TV drama series." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -25,9 +25,99 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* BODA BODA Section Styling */
+        .boda-section {
+            background: #fdf8ea;
+            position: relative;
+        }
+        .boda-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #BF6212, #1A685B, #BF6212);
+        }
+        .boda-hero-card {
+            background: #fff;
+            border-left: 5px solid #BF6212;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        .boda-character-card {
+            background: #fff;
+            border-top: 4px solid #1A685B;
+            padding: 1.5rem;
+            height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .boda-character-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .boda-script-block {
+            background: #1A685B;
+            color: #fff;
+            padding: 1.5rem;
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            border-radius: 0;
+        }
+        .boda-script-block .character {
+            color: #FDC82F;
+            font-weight: 700;
+        }
+        .boda-script-block .direction {
+            color: #FDF8EA;
+            font-style: italic;
+            opacity: 0.85;
+        }
+        .boda-budget-table {
+            width: 100%;
+            background: #fff;
+        }
+        .boda-budget-table th {
+            background: #1A685B;
+            color: #fff;
+            font-family: "Josefin Sans", sans-serif;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            padding: 0.8rem 1rem;
+        }
+        .boda-budget-table td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .boda-budget-table .total-row {
+            background: #BF6212;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .boda-cert-badge {
+            display: inline-block;
+            background: #1A685B;
+            color: #fff;
+            padding: 0.3rem 1rem;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            font-family: "Josefin Sans", sans-serif;
+        }
+        @media (max-width: 767.98px) {
+            .boda-script-block {
+                font-size: 0.8rem;
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -41,10 +131,9 @@
     <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
         <div class="row align-items-center h-100">
             <div class="col-lg-4 text-center text-lg-start">
-               <a href="index.html">
-        <!-- Added the 'navbar-logo' class -->
-        <img src="img/logo.png" alt="logo" class="navbar-logo">
-    </a>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="navbar-logo">
+                </a>
             </div>
             <div class="col-lg-8 d-none d-lg-block">
                 <div class="row">
@@ -77,8 +166,7 @@
                             </div>
                             <div class="ms-2">
                                 <h6 class="text-primary mb-0">Address</h6>
-                                <span class="text-white">45 Mukinduri Road, Karen
-Nairobi, Kenya</span>
+                                <span class="text-white">45 Mukinduri Road, Karen Nairobi, Kenya</span>
                             </div>
                         </div>
                     </div>
@@ -191,7 +279,7 @@ Nairobi, Kenya</span>
                 </div>
                 <div class="col-lg-6">
                     <p class="section-title bg-white text-start text-primary pe-3">Creative Destiny</p>
-                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">Nurturing Africa’s Creative Economy</h1>
+                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">Nurturing Africa's Creative Economy</h1>
                     <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">Creative Destiny is our dedicated business unit focused on the creative economy. We provide Business Development Services (BDS) and Artist & Repertoire (A&R) support to artists, record labels, and creative entrepreneurs. Our goal is to help creatives monetize their talent while using their craft for positive social impact.</p>
                     <p class="mb-4 wow fadeIn" data-wow-delay="0.4s">We give strategic oversight to creative entrepreneurs, enabling them to manage their craft as sustainable businesses. Our approach combines industry expertise with a passion for storytelling, inclusion, and innovation.</p>
                     <div class="d-flex mt-4 wow fadeIn" data-wow-delay="0.5s">
@@ -227,7 +315,7 @@ Nairobi, Kenya</span>
                             <i class="fa fa-clapperboard fa-2x text-secondary"></i>
                         </div>
                         <h3>Content Production</h3>
-                        <p class="mb-2">From music videos to digital shows, we produce compelling content that bridges Africa to the world. Our flagship is the Talanta Mtaani TV Show.</p>
+                        <p class="mb-2">From music videos to digital shows, we produce compelling content that bridges Africa to the world.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
@@ -263,7 +351,7 @@ Nairobi, Kenya</span>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="event-item h-100 p-4">
-                        <img class="img-fluid w-100 mb-4" src="img/client-oxic.jpg" alt="Oxic Entertainment">
+                        <img class="img-fluid w-100 mb-4" src="img/entertainment.jpg" alt="Oxic Entertainment">
                         <h3>Oxic Entertainment</h3>
                         <p>An entertainment company that develops, promotes and provides content from Africa to the world. Eden Destiny provides strategic oversight and A&R services. Roselyne Olewe is a Director.</p>
                         <p class="text-primary"><strong>Services:</strong> Artist management, content production, brand development, community education.</p>
@@ -279,7 +367,7 @@ Nairobi, Kenya</span>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="event-item h-100 p-4">
-                        <img class="img-fluid w-100 mb-4" src="img/client-talanta.jpg" alt="Talanta Mtaani">
+                        <img class="img-fluid w-100 mb-4" src="img/consortium.jpg" alt="Talanta Mtaani">
                         <h3>Talanta Mtaani Consortium</h3>
                         <p>An innovative partnership behind the Talanta Mtaani Youth Empowerment Programme. Includes a national TV talent search (5 seasons) and a wholistic youth development curriculum. We manage the consortium and produce the inclusive reality TV show with sign language interpreters.</p>
                     </div>
@@ -288,6 +376,188 @@ Nairobi, Kenya</span>
         </div>
     </div>
     <!-- Clients End -->
+
+    <!-- ==================== BODA BODA TV DRAMA SECTION ==================== -->
+    <div class="container-fluid boda-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                <span class="boda-cert-badge mb-3">J.M PICTURES PRODUCTIONS</span>
+                <h1 class="display-5 mt-3 mb-2">BODA BODA</h1>
+                <p class="lead mb-4">A TV Drama Series</p>
+                <p class="mb-5">In the chaotic streets of Nairobi, a struggling boda boda rider fights to survive each day, unknowingly ferrying danger, secrets, and moral choices that threaten his freedom, family, and life.</p>
+            </div>
+
+            <!-- About the Series + Hero Card -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="boda-hero-card">
+                        <h3 class="mb-3">About the Series</h3>
+                        <p><strong>BODA BODA</strong> is not just about motorcycles — it is about ordinary people forced to make extraordinary decisions in a city that rarely shows mercy. The series blends suspense, social realism, and emotional depth, capturing the raw truth of Kenya's informal economy and the people who depend on it to survive.</p>
+                        <p>As Kaunda navigates police harassment, exploitative clients, stolen motorcycles, and risky deliveries, the series reveals the fragile line between earning an honest living and being pulled into criminal worlds beyond his control.</p>
+                        <p class="mb-0"><span class="boda-cert-badge">BODA BODA DRAMA</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="boda-character-card text-center">
+                        <h4 class="mb-2">Key Character</h4>
+                        <h3 class="mb-1" style="color: #BF6212;">KAUNDA MATANO</h3>
+                        <p class="text-muted small mb-3">Hardworking • Honest • Determined • Resilient</p>
+                        <p>Kaunda is hardworking, honest, determined, responsible, and resilient, yet vulnerable to the dangers and misfortunes of life on Nairobi's streets. He dreams of building a better life for his family. Despite his honesty and determination, luck rarely favors him — he often carries risky passengers, faces clients who don't pay, and struggles with police harassment.</p>
+                        <p class="small fst-italic">Constantly thrust into challenging and sometimes dangerous situations, Kaunda must navigate the harsh realities of the streets while trying to stay true to his values and provide for his loved ones.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Season One + Episode Format -->
+            <div class="row g-5 mb-5 wow fadeIn" data-wow-delay="0.4s">
+                <div class="col-lg-6">
+                    <h3 class="mb-3">First Season</h3>
+                    <div class="bg-white p-4 shadow-sm">
+                        <p>Season One exposes how desperation forces good people into morally grey choices. Kaunda accepts risky jobs, questionable deliveries, and dangerous clients — not out of greed, but necessity. Each compromise chips away at his sense of right and wrong.</p>
+                        <p class="mb-0">At home, Kaunda faces growing pressure to provide school fees, food, rent, and basic dignity for his family. His wife's frustration is not cruelty but exhaustion born from unmet needs, broken promises, and fear for their future. Their domestic conflicts reflect the silent battles happening in many Kenyan households.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Episode Format</h3>
+                    <div class="bg-white p-4 shadow-sm">
+                        <p><strong>Format:</strong> Forty-Five Minutes</p>
+                        <p>Each episode of <strong>BODA BODA</strong> follows Kaunda navigating Nairobi's streets while facing the pressures of providing for his family. Episodes open with street-level action — rides, risky clients, and traffic chaos — before moving into challenges or moral dilemmas, including stolen goods, police encounters, or domestic tension at home.</p>
+                        <p class="mb-0">Each episode builds to a high-stakes or emotional climax, forcing Kaunda to make difficult choices that reveal his values and resilience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breaking the Mold -->
+            <div class="row mb-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-12">
+                    <div class="bg-primary text-white p-4 text-center">
+                        <h3 class="text-white mb-2">Breaking the Mold: BODA BODA Drama That Goes Beyond</h3>
+                        <p class="mb-0">We immerse the audience in the daily reality of boda boda riders — the long hours, constant risk, police harassment, unreliable clients, and unpredictable income. The city becomes a character itself: loud, fast, unforgiving.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Script Excerpts -->
+            <div class="row g-4 mb-5 wow fadeIn" data-wow-delay="0.6s">
+                <div class="col-12">
+                    <h3 class="mb-3"><i class="fa fa-file-alt text-primary me-2"></i>Script Excerpts</h3>
+                </div>
+                <div class="col-lg-6">
+                    <div class="boda-script-block">
+                        <p><span class="direction">SCENE 1: INT. SINGLE ROOM – EARLY MORNING</span></p>
+                        <p><span class="direction">Dim light filters through a tattered curtain. A small alarm clock ticks. The room is cramped — a thin mattress, a wooden stool, a Bible, a helmet, reflectors hanging on a nail, and a calendar marked with red circles around overdue dates. A buzzing phone breaks the silence.</span></p>
+                        <p class="character">MAMA NIA (V.O.)</p>
+                        <p>Jangili ako tu, kuona mtoto wake, that's where he draws the line?</p>
+                        <p class="character">KAUNDA MATANO (30s)</p>
+                        <p>— rugged, unshaven, eyes that tell a thousand quiet battles — lies still for a moment before answering.</p>
+                        <p class="character">KAUNDA</p>
+                        <p>I understand, Mama Nia... give me time. I will, once—</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="boda-script-block">
+                        <p><span class="direction">SCENE 8: EXT. DARK BACKSTREET – LATER</span></p>
+                        <p><span class="direction">They stop near a small gate. The drunk man pats his pocket and pulls out his wallet.</span></p>
+                        <p class="character">KAUNDA</p>
+                        <p>Fifty tu.</p>
+                        <p><span class="direction">Before the man can pay, Banda pulls out a pistol from under his jacket. Kaunda freezes — eyes wide.</span></p>
+                        <p class="character">KAUNDA (whispering)</p>
+                        <p>Banda... unafanya nini?</p>
+                        <p class="character">BANDA (quiet, cold)</p>
+                        <p>Wallet. Phone. Usijaribu ku waste time.</p>
+                        <p class="character">KAUNDA (V.O.)</p>
+                        <p>One mistake... one moment... and peace becomes another prison.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Production Budget Table -->
+            <div class="row mb-5 wow fadeIn" data-wow-delay="0.7s">
+                <div class="col-12">
+                    <h3 class="mb-3"><i class="fa fa-coins text-primary me-2"></i>TV Drama Episode Production Budget (45 Minutes)</h3>
+                    <p class="text-muted mb-3">All costs in Kenyan Shillings (KES) — Produced by Joanita Motion Pictures Limited</p>
+                    <div class="table-responsive">
+                        <table class="boda-budget-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Item</th>
+                                    <th>Cost (KES)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td rowspan="5"><strong>Pre-Production</strong></td><td>Scriptwriting & Storyboarding</td><td>10,000</td></tr>
+                                <tr><td>Location Scouting & Permits</td><td>15,000</td></tr>
+                                <tr><td>Casting & Rehearsals</td><td>10,000</td></tr>
+                                <tr><td>Production Design & Props</td><td>8,000</td></tr>
+                                <tr><td><strong>Pre-Production Total</strong></td><td><strong>43,000</strong></td></tr>
+                                <tr><td rowspan="2"><strong>Cast</strong></td><td>Main Actor</td><td>25,000</td></tr>
+                                <tr><td>Extras (6–15)</td><td>12,000</td></tr>
+                                <tr><td colspan="2"><strong>Cast Total</strong></td><td><strong>37,000</strong></td></tr>
+                                <tr><td rowspan="8"><strong>Crew</strong></td><td>Director</td><td>25,000</td></tr>
+                                <tr><td>Assistant Director</td><td>15,000</td></tr>
+                                <tr><td>Camera Operator</td><td>12,000</td></tr>
+                                <tr><td>Sound Recordist</td><td>10,000</td></tr>
+                                <tr><td>Gaffer / Lighting</td><td>8,000</td></tr>
+                                <tr><td>Production Assistants</td><td>6,000</td></tr>
+                                <tr><td>Wardrobe / Costume</td><td>5,000</td></tr>
+                                <tr><td>Makeup Artist</td><td>4,000</td></tr>
+                                <tr><td colspan="2"><strong>Crew Total</strong></td><td><strong>85,000</strong></td></tr>
+                                <tr><td rowspan="4"><strong>Equipment</strong></td><td>Camera Equipment</td><td>25,000</td></tr>
+                                <tr><td>Lighting Equipment</td><td>10,000</td></tr>
+                                <tr><td>Sound Equipment</td><td>5,000</td></tr>
+                                <tr><td>Transport & Fuel</td><td>15,000</td></tr>
+                                <tr><td colspan="2"><strong>Equipment Total</strong></td><td><strong>55,000</strong></td></tr>
+                                <tr><td rowspan="2"><strong>Production</strong></td><td>Food & Catering</td><td>12,000</td></tr>
+                                <tr><td>Miscellaneous</td><td>5,000</td></tr>
+                                <tr><td colspan="2"><strong>Production Total</strong></td><td><strong>17,000</strong></td></tr>
+                                <tr><td rowspan="4"><strong>Post-Production</strong></td><td>Editing</td><td>25,000</td></tr>
+                                <tr><td>Sound Mixing</td><td>10,000</td></tr>
+                                <tr><td>Color Grading</td><td>10,000</td></tr>
+                                <tr><td>Graphics & Titles</td><td>5,000</td></tr>
+                                <tr><td colspan="2"><strong>Post-Production Total</strong></td><td><strong>50,000</strong></td></tr>
+                                <tr><td colspan="2"><strong>Contingency Reserve</strong></td><td><strong>30,000</strong></td></tr>
+                                <tr class="total-row">
+                                    <td colspan="2"><strong>GRAND TOTAL</strong></td>
+                                    <td><strong>287,000</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal Credentials -->
+            <div class="row g-4 wow fadeIn" data-wow-delay="0.8s">
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 shadow-sm h-100">
+                        <h5 class="mb-3"><i class="fa fa-certificate text-primary me-2"></i>Certificate of Registration of a Copyright Work</h5>
+                        <p class="mb-1">It is hereby certified that a Copyright Work in the <strong>Literary Works</strong> category entitled <strong>'Boda Boda'</strong> and numbered <strong>RZ86478</strong> has been registered in the name of <strong>ZACHAEUS MWASI</strong>.</p>
+                        <p class="small text-muted mb-0">Acting Executive Director — Kenya Copyright Board</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 shadow-sm h-100">
+                        <h5 class="mb-3"><i class="fa fa-file-contract text-primary me-2"></i>Tax Compliance Certificate</h5>
+                        <p class="mb-1"><strong>JOANITA MOTION PICTURES LIMITED</strong></p>
+                        <p class="mb-1">Taxpayer PIN: <strong>P052423247Y</strong></p>
+                        <p class="mb-1">Certificate Number: <strong>KRANON1465211325</strong></p>
+                        <p class="mb-1">Issued: <strong>10/04/2025</strong> — Valid up to <strong>09/04/2026</strong></p>
+                        <p class="small text-muted mb-0">This confirms that Joanita Motion Pictures Limited has filed relevant tax returns and paid taxes due as provided by Law.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thank You CTA -->
+            <div class="text-center mt-5 wow fadeIn" data-wow-delay="0.9s">
+                <h3 class="mb-3">THANK YOU</h3>
+                <a class="btn btn-primary py-3 px-5 me-3" href="donation.html">Support This Production</a>
+                <a class="btn btn-secondary py-3 px-5" href="contact.html">Partner With Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- ==================== END BODA BODA SECTION ==================== -->
 
     <!-- Blog / Media Section Start -->
     <div class="container-fluid donate py-5">
@@ -333,8 +603,7 @@ Nairobi, Kenya</span>
             <div class="row g-5 py-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>45 Mukinduri Road, Karen
-Nairobi, Kenyanya</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>45 Mukinduri Road, Karen Nairobi, Kenya</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 716 238 875</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@edendestinygroup.com</p>
                     <div class="d-flex pt-3">
@@ -361,42 +630,23 @@ Nairobi, Kenyanya</p>
                     <p class="mb-1">Sunday</p>
                     <h6 class="text-light">Closed</h6>
                 </div>
-                 <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Gallery</h4>
-            <div class="row g-2">
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-1.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-2.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-3.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid w-100 h-50"
-                  src="img/gallery-4.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-5.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-6.jpeg" alt="" />
-              </div>
-            </div>
-          </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-1.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-2.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-3.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100 h-50" src="img/gallery-4.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-5.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-6.jpeg" alt="" /></div>
+                    </div>
+                </div>
             </div>
             <div class="copyright pt-5">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a class="fw-semi-bold" href="index.html">Eden Destiny Group Ltd</a>, All Right Reserved.
                     </div>
-                    <!-- <div class="col-md-6 text-center text-md-end">
-                        Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>. Distributed by <a class="fw-semi-bold" href="https://themewagon.com">ThemeWagon</a>
-                    </div> -->
                 </div>
             </div>
         </div>
