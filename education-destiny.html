@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Education Destiny - Eden Destiny Group</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="educationdestiny, J.Don Academy, Prof Olewe Nyunya Foundation, education Kenya, EDG" name="keywords">
-    <meta content="Education Destiny by Eden Destiny Group provides strategic advisory to the Prof. Olewe Nyunya Foundation and supports quality education through J.Don Academy." name="description">
+    <meta content="educationdestiny, J.Don Academy, Prof Olewe Nyunya Foundation, HEAL READ GROW, Books & Trunks, Gacharage, education Kenya, EDG" name="keywords">
+    <meta content="Education Destiny by Eden Destiny Group supports J.Don Academy and the HEAL. READ. GROW. initiative—empowering youth through creativity, literacy, and mental health." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -25,9 +25,155 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* HEAL. READ. GROW. Section Styling */
+        .heal-section {
+            background: linear-gradient(135deg, #fdf8ea 0%, #ffffff 50%, #fdf8ea 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .heal-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #BF6212, #1A685B, #BF6212);
+        }
+        .heal-pillar-card {
+            background: #fff;
+            border-left: 4px solid #BF6212;
+            border-radius: 0;
+            padding: 2rem;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .heal-pillar-card:nth-child(2) {
+            border-left-color: #1A685B;
+        }
+        .heal-pillar-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .heal-pillar-card h3 {
+            font-family: "Josefin Sans", sans-serif;
+            color: #1A685B;
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        .heal-pillar-card .pillar-icon {
+            font-size: 2.2rem;
+            color: #BF6212;
+            margin-bottom: 1rem;
+        }
+        .heal-pillar-card:nth-child(2) .pillar-icon {
+            color: #1A685B;
+        }
+        .heal-timeline {
+            position: relative;
+            padding-left: 30px;
+            border-left: 3px solid #BF6212;
+        }
+        .heal-timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+        }
+        .heal-timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #1A685B;
+            border: 3px solid #BF6212;
+        }
+        .heal-timeline-item h5 {
+            font-family: "Josefin Sans", sans-serif;
+            color: #051311;
+            margin-bottom: 0.3rem;
+        }
+        .heal-tag {
+            display: inline-block;
+            background: #1A685B;
+            color: #fff;
+            padding: 0.2rem 1rem;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-family: "Josefin Sans", sans-serif;
+        }
+        .heal-partner-logo {
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #1A685B;
+            letter-spacing: 1px;
+        }
+        .heal-stat-box {
+            background: #fff;
+            border: 2px solid #fdf8ea;
+            padding: 1.5rem;
+            text-align: center;
+            transition: border-color 0.3s;
+        }
+        .heal-stat-box:hover {
+            border-color: #BF6212;
+        }
+        .heal-stat-box .stat-number {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #BF6212;
+        }
+        .heal-stat-box .stat-label {
+            font-size: 0.85rem;
+            color: #797E88;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .heal-impact-box {
+            background: #1A685B;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 0;
+        }
+        .heal-impact-box h4 {
+            color: #fff !important;
+            font-family: "Josefin Sans", sans-serif;
+        }
+        .heal-impact-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .heal-impact-box ul li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .heal-impact-box ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #FDC82F;
+            font-weight: bold;
+        }
+        @media (max-width: 767.98px) {
+            .heal-pillar-card {
+                margin-bottom: 1.5rem;
+            }
+            .heal-stat-box .stat-number {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -41,10 +187,9 @@
     <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
         <div class="row align-items-center h-100">
             <div class="col-lg-4 text-center text-lg-start">
-               <a href="index.html">
-        <!-- Added the 'navbar-logo' class -->
-        <img src="img/logo.png" alt="logo" class="navbar-logo">
-    </a>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="navbar-logo">
+                </a>
             </div>
             <div class="col-lg-8 d-none d-lg-block">
                 <div class="row">
@@ -77,8 +222,7 @@
                             </div>
                             <div class="ms-2">
                                 <h6 class="text-primary mb-0">Address</h6>
-                                <span class="text-white">45 Mukinduri Road, Karen
-Nairobi, Kenya</span>
+                                <span class="text-white">45 Mukinduri Road, Karen Nairobi, Kenya</span>
                             </div>
                         </div>
                     </div>
@@ -140,7 +284,7 @@ Nairobi, Kenya</span>
     </div>
     <!-- Page Header End -->
 
-    <!-- Overview Section -->
+    <!-- ==================== J.DON ACADEMY OVERVIEW ==================== -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -162,7 +306,6 @@ Nairobi, Kenya</span>
             </div>
         </div>
     </div>
-    <!-- Overview End -->
 
     <!-- What We Do (Services) -->
     <div class="container-fluid py-5">
@@ -202,7 +345,6 @@ Nairobi, Kenya</span>
             </div>
         </div>
     </div>
-    <!-- Services End -->
 
     <!-- Features Stats -->
     <div class="container-fluid py-5">
@@ -257,7 +399,160 @@ Nairobi, Kenya</span>
             </div>
         </div>
     </div>
-    <!-- Features End -->
+
+    <!-- ==================== HEAL. READ. GROW. INITIATIVE ==================== -->
+    <div class="container-fluid heal-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                <span class="heal-tag mb-3">A Joint Initiative</span>
+                <h1 class="display-5 mt-3 mb-2">HEAL. READ. GROW.</h1>
+                <p class="lead mb-2">Empowering <strong>ALL</strong> Youth in Underserved Communities Through Creativity, Literacy &amp; Education</p>
+                <p class="mb-1"><span class="heal-partner-logo">Eden Destiny Group (EDG)</span> &amp; <span class="heal-partner-logo">The Books &amp; Trunks Society (B&amp;T)</span></p>
+                <p class="badge bg-primary mt-2 mb-4" style="font-size: 0.9rem; padding: 0.5rem 1.2rem;">Pilot Programme • Gacharage Schools, Kiambu • Q2 2026</p>
+                <p class="mb-5">A structured 2026 pilot uniting two organisations around a single, urgent mission: to equip youth with emotional resilience, creative expression, and literacy skills—and to protect them from mental health collapse and addiction.</p>
+            </div>
+
+            <!-- Kenya Challenge Stats -->
+            <div class="row g-4 mb-5 wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-4">
+                    <div class="heal-stat-box">
+                        <div class="stat-number">1 in 4</div>
+                        <div class="stat-label">Young Kenyans face mental health challenges (WHO, 2020)</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="heal-stat-box">
+                        <div class="stat-number">10%</div>
+                        <div class="stat-label">Youth aged 15–24 report drug use (KNBS, 2022)</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="heal-stat-box">
+                        <div class="stat-number">Girls</div>
+                        <div class="stat-label">Face compounded barriers: education gaps, inadequate menstrual health support, lack of creative &amp; emotional outlets</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three Pillars -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="heal-pillar-card">
+                        <div class="pillar-icon">🎵</div>
+                        <h3>HEAL</h3>
+                        <p class="text-muted mb-1"><em>Led by Eden Destiny Group</em></p>
+                        <p>Music therapy, dance, storytelling, sports for mental health, and values education—all facilitated by trained professionals and rooted in African cultural heritage.</p>
+                        <p class="small fst-italic mt-3">Sustainability: Structured procedures will enable school staff and community volunteers to continue activities beyond the pilot period.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="heal-pillar-card">
+                        <div class="pillar-icon">📚</div>
+                        <h3>READ &amp; GROW</h3>
+                        <p class="text-muted mb-1"><em>Led by The Books &amp; Trunks Society</em></p>
+                        <p>Story reading sessions, book club activities, and donated reading material—establishing enriched reading corners at Gacharage Schools and linking emotional expression with literacy identity.</p>
+                        <p class="small fst-italic mt-3">Sustainability: Book clubs and reading corners handed over to trained teacher-champions, with quarterly volunteer check-ins by B&amp;T.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pilot Event Details -->
+            <div class="row g-5 align-items-center mb-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Pilot Event — Gacharage Schools, Kiambu</h3>
+                    <p>The first pilot will be held across the <strong>Gacharage Schools campus</strong>—serving the Kindergarten, Primary School, and High School—in Kiambu County, during <strong>Q2 2026</strong>. A full-day immersive programme for both girls and boys:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Registration, welcome gathering &amp; community orientation</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Music therapy &amp; storytelling workshops led by EDG facilitators</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Sports for mental health activities</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Dance sessions with cultural grounding</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Story reading &amp; book club session led by B&amp;T volunteers</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Values education &amp; emotional resilience module</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>B&amp;T reading corner setup &amp; book donation ceremony</li>
+                        <li><i class="fa fa-check-circle text-primary me-2"></i>Closing reflection, testimonials &amp; community prayer</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="heal-impact-box">
+                        <h4 class="mb-3">Expected Impact</h4>
+                        <p><strong>Short-term outcomes from Gacharage pilot:</strong></p>
+                        <ul>
+                            <li>Pilot completed with documented outcomes</li>
+                            <li>Young minds engaged in structured creative &amp; emotional wellness sessions</li>
+                            <li>School libraries enriched with donated books &amp; new reading corners</li>
+                            <li>Documented testimonials from school leadership on student mental health realities</li>
+                            <li>Replicable event model ready for scale across Kiambu and beyond</li>
+                        </ul>
+                        <p class="mt-3"><strong>Medium-to-long-term vision:</strong></p>
+                        <ul>
+                            <li>Reduced absenteeism &amp; improved emotional well-being among participants</li>
+                            <li>Sustained community book clubs anchored by teacher-champions</li>
+                            <li>A permanent EDG–B&amp;T alliance offered to other schools and counties</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Implementation Timeline -->
+            <div class="row mb-5 wow fadeIn" data-wow-delay="0.6s">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">Implementation Timeline</h3>
+                </div>
+                <div class="col-lg-4">
+                    <div class="heal-timeline">
+                        <div class="heal-timeline-item">
+                            <h5>Phase 1 — Now to Mid Q2 2026</h5>
+                            <p class="small text-muted">Sign MOU • Finalise school schedule • Source books • Train facilitators</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="heal-timeline">
+                        <div class="heal-timeline-item">
+                            <h5>Phase 2 — Mid/Late Q2 2026</h5>
+                            <p class="small text-muted">Execute Gacharage pilot event • Collect testimonials from teachers &amp; board members • Administer M&amp;E surveys</p>
+                            <p class="badge bg-primary">Milestone: Impact report launched; 2027 roadmap drafted</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="heal-timeline">
+                        <div class="heal-timeline-item">
+                            <h5>Phase 3 — Q3–Q4 2026</h5>
+                            <p class="small text-muted">Publish impact report • Donor engagement • Plan 2027 expansion to additional schools</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal & Safeguarding + Contact -->
+            <div class="row g-4 wow fadeIn" data-wow-delay="0.7s">
+                <div class="col-lg-8">
+                    <div class="bg-light p-4">
+                        <h5 class="mb-3"><i class="fa fa-shield-alt text-primary me-2"></i>Legal &amp; Safeguarding Commitments</h5>
+                        <ul class="small mb-0">
+                            <li>All sessions follow child-safe, culturally rooted facilitation standards</li>
+                            <li>No personally identifying information about child participants will be shared publicly without explicit parental or guardian consent</li>
+                            <li>A Memorandum of Understanding (MOU) will be signed by EDG and B&amp;T before any funds are raised or spent</li>
+                            <li>Transparent financial records will be maintained and accessible to both partners</li>
+                            <li>All donated books will be age-appropriate and vetted by community liaisons before distribution</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-primary text-white p-4 h-100 d-flex flex-column justify-content-center">
+                        <h5 class="text-white mb-3">Be Part of the Healing.</h5>
+                        <p class="mb-1"><i class="fa fa-envelope me-2"></i>admin@edendestinygroup.com</p>
+                        <p class="mb-1"><i class="fa fa-envelope me-2"></i>admin@booksntrunks.org</p>
+                        <p><i class="fa fa-phone me-2"></i>+254 705 956 111</p>
+                        <p class="fst-italic mb-0">One Village at a Time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================== END HEAL. READ. GROW. ==================== -->
 
     <!-- Newsletter Start -->
     <div class="container-fluid bg-primary py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -282,8 +577,7 @@ Nairobi, Kenya</span>
             <div class="row g-5 py-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>45 Mukinduri Road, Karen
-Nairobi, Kenyanya</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>45 Mukinduri Road, Karen Nairobi, Kenya</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 716 238 875</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@edendestinygroup.com</p>
                     <div class="d-flex pt-3">
@@ -310,42 +604,23 @@ Nairobi, Kenyanya</p>
                     <p class="mb-1">Sunday</p>
                     <h6 class="text-light">Closed</h6>
                 </div>
-                 <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Gallery</h4>
-            <div class="row g-2">
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-1.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-2.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-3.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid w-100 h-50"
-                  src="img/gallery-4.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-5.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-6.jpeg" alt="" />
-              </div>
-            </div>
-          </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-1.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-2.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-3.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100 h-50" src="img/gallery-4.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-5.jpeg" alt="" /></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-6.jpeg" alt="" /></div>
+                    </div>
+                </div>
             </div>
             <div class="copyright pt-5">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a class="fw-semi-bold" href="index.html">Eden Destiny Group Ltd</a>, All Right Reserved.
                     </div>
-                    <!-- <div class="col-md-6 text-center text-md-end">
-                        Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>. Distributed by <a class="fw-semi-bold" href="https://themewagon.com">ThemeWagon</a>
-                    </div> -->
                 </div>
             </div>
         </div>
