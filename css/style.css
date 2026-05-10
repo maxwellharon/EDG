@@ -697,3 +697,14 @@
         max-width: 120px;
     }
 }
+
+.testimonial-img img {
+    max-width: 250px;
+    /* Adjust this value to your preferred size */
+    height: auto;
+    /* Maintains aspect ratio */
+    display: block;
+    /* Removes bottom whitespace gap */
+    margin: 0 auto;
+    /* Centers the image if needed */
+}
