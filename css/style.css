@@ -685,7 +685,7 @@
 .navbar-logo {
     /* Adjust the 150px to your preferred size */
     width: 100%;
-    max-width: 150px;
+    max-width: 220px;
     height: auto;
     /* Maintains aspect ratio */
     display: inline-block;
@@ -694,7 +694,7 @@
 /* Optional: If you want it even smaller on mobile */
 @media (max-width: 768px) {
     .navbar-logo {
-        max-width: 120px;
+        max-width: 200px;
     }
 }
 
