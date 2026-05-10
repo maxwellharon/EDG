@@ -708,3 +708,220 @@
     margin: 0 auto;
     /* Centers the image if needed */
 }
+
+/*****************************************************
+ * EDEN DESTINY GROUP – GALLERY STYLES
+ * Compatible with original Charitize color scheme
+ *****************************************************/
+
+/* Gallery Card */
+.gallery-card {
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-card .gallery-img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.gallery-card:hover .gallery-img {
+    transform: scale(1.08);
+    filter: brightness(0.45);
+}
+
+/* Gallery Overlay – hidden by default, appears on hover */
+.gallery-overlay {
+    background: linear-gradient(to top,
+            rgba(26, 104, 91, 0.9) 0%,
+            rgba(191, 98, 18, 0.8) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.gallery-overlay h6 {
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.gallery-overlay .badge {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #BF6212 !important;
+    padding: 0.4em 0.8em;
+}
+
+/* Zoom icon */
+.gallery-zoom {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    pointer-events: all;
+}
+
+.gallery-zoom:hover {
+    transform: scale(1.25);
+    color: #FDF8EA !important;
+}
+
+/* Filter Buttons */
+.gallery-filter {
+    border-radius: 0;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 0.6rem 1.5rem;
+    border: 2px solid #BF6212 !important;
+    color: #BF6212 !important;
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+}
+
+.gallery-filter.active,
+.gallery-filter:hover {
+    background-color: #BF6212 !important;
+    color: #fff !important;
+    border-color: #BF6212 !important;
+}
+
+/* Hide animation for filtered items */
+.gallery-item {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.gallery-item.hidden {
+    display: none;
+}
+
+/* No Results Message */
+#noGalleryResults i {
+    color: #BF6212 !important;
+}
+
+#noGalleryResults h4 {
+    color: #051311 !important;
+}
+
+/* ============ LIGHTBOX MODAL ============ */
+/* Modal header – dark green */
+#galleryModal .modal-header {
+    background-color: #1A685B !important;
+    border-bottom: 3px solid #BF6212 !important;
+}
+
+#galleryModal .modal-header .modal-title {
+    color: #fff !important;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#galleryModal .btn-close-white {
+    filter: brightness(0) invert(1);
+}
+
+/* Modal body */
+#galleryModal .modal-body {
+    background-color: #051311 !important;
+}
+
+/* Modal footer */
+#galleryModal .modal-footer {
+    border-top: 1px solid #dee2e6;
+    background-color: #fff;
+}
+
+#galleryModal .modal-footer h6 {
+    color: #051311 !important;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#galleryModal .modal-footer p {
+    color: #797E88 !important;
+}
+
+/* Close button in footer */
+#galleryModal .modal-footer .btn-primary {
+    background-color: #BF6212 !important;
+    border-color: #BF6212 !important;
+    color: #fff !important;
+}
+
+#galleryModal .modal-footer .btn-primary:hover {
+    background-color: #1A685B !important;
+    border-color: #1A685B !important;
+}
+
+/* Modal backdrop */
+.modal-backdrop.show {
+    opacity: 0.7;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 991.98px) {
+    .gallery-overlay h6 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .gallery-card .gallery-img {
+        height: 220px !important;
+    }
+
+    .gallery-overlay h6 {
+        font-size: 0.85rem;
+    }
+
+    .gallery-filter {
+        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+    }
+
+    .gallery-filter {
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gallery-card .gallery-img {
+        height: 180px !important;
+    }
+
+    .gallery-overlay h6 {
+        font-size: 0.75rem;
+    }
+
+    .gallery-overlay .badge {
+        font-size: 0.6rem;
+        padding: 0.3em 0.6em;
+    }
+
+    .gallery-overlay .gallery-zoom {
+        font-size: 1.2rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .gallery-filter {
+        padding: 0.35rem 0.8rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.3px;
+    }
+}

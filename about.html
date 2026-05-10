@@ -77,7 +77,8 @@
                             </div>
                             <div class="ms-2">
                                 <h6 class="text-primary mb-0">Address</h6>
-                                <span class="text-white">P.O. Box 74637-00200, Nairobi, KE</span>
+                                <span class="text-white">45 Mukinduri Road, Karen
+Nairobi, Kenya</span>
                             </div>
                         </div>
                     </div>
@@ -287,7 +288,219 @@
         </div>
     </div>
     <!-- Features End -->
+<!-- Gallery Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="section-title bg-white text-center text-primary px-3">Our Work</p>
+            <h1 class="display-6 mb-3">Moments of Impact</h1>
+            <p class="mb-5">A glimpse into our journey—wellness expos, creative workshops, education outreach, and community empowerment across Kenya and beyond.</p>
+        </div>
 
+        <!-- Filter Buttons -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <button class="btn btn-outline-primary gallery-filter active" data-filter="all">All</button>
+            <button class="btn btn-outline-primary gallery-filter" data-filter="wellness">Wellness</button>
+            <button class="btn btn-outline-primary gallery-filter" data-filter="education">Education</button>
+            <button class="btn btn-outline-primary gallery-filter" data-filter="creative">Creative</button>
+            <button class="btn btn-outline-primary gallery-filter" data-filter="community">Community</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-3 gallery-grid" id="galleryGrid">
+            <!-- Item 1 - Wellness -->
+            <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="wellness">
+                <div class="gallery-card position-relative overflow-hidden rounded">
+                    <img src="img/gallery-1.jpg" 
+                         alt="Wellness Expo" 
+                         class="w-100 gallery-img" 
+                         loading="lazy"
+                         style="height: 280px; object-fit: cover;">
+                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center p-3">
+                        <i class="fas fa-search-plus fa-2x text-white mb-3 gallery-zoom" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#galleryModal"
+                           data-img="img/gallery-1.jpg"
+                           data-title="Wellness Expo 2026"
+                           data-desc="Our annual holistic health event brought together 500+ participants for yoga, meditation, and mental health screenings."></i>
+                        <h6 class="text-white text-center">Wellness Expo 2026</h6>
+                        <span class="badge bg-primary mt-1">Wellness</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 - Education -->
+            <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="education">
+                <div class="gallery-card position-relative overflow-hidden rounded">
+                    <img src="img/gallery-2.jpg" 
+                         alt="J.Don Academy" 
+                         class="w-100 gallery-img" 
+                         loading="lazy"
+                         style="height: 280px; object-fit: cover;">
+                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center p-3">
+                        <i class="fas fa-search-plus fa-2x text-white mb-3 gallery-zoom" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#galleryModal"
+                           data-img="img/gallery-2.jpg"
+                           data-title="J.Don Academy Opening"
+                           data-desc="The official opening of J.Don Academy in honour of Prof. Olewe Nyunya—a new chapter in quality education."></i>
+                        <h6 class="text-white text-center">J.Don Academy Opening</h6>
+                        <span class="badge bg-primary mt-1">Education</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 - Creative -->
+            <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="creative">
+                <div class="gallery-card position-relative overflow-hidden rounded">
+                    <img src="img/gallery-3.jpg" 
+                         alt="Talanta Mtaani" 
+                         class="w-100 gallery-img" 
+                         loading="lazy"
+                         style="height: 280px; object-fit: cover;">
+                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center p-3">
+                        <i class="fas fa-search-plus fa-2x text-white mb-3 gallery-zoom" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#galleryModal"
+                           data-img="img/gallery-3.jpg"
+                           data-title="Talanta Mtaani Auditions"
+                           data-desc="Young talents showcased their skills at the Season 6 auditions of the inclusive Talanta Mtaani TV show."></i>
+                        <h6 class="text-white text-center">Talanta Mtaani Auditions</h6>
+                        <span class="badge bg-primary mt-1">Creative</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 4 - Community -->
+            <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="community">
+                <div class="gallery-card position-relative overflow-hidden rounded">
+                    <img src="img/gallery-4.jpg" 
+                         alt="Community Outreach" 
+                         class="w-100 gallery-img" 
+                         loading="lazy"
+                         style="height: 280px; object-fit: cover;">
+                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center p-3">
+                        <i class="fas fa-search-plus fa-2x text-white mb-3 gallery-zoom" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#galleryModal"
+                           data-img="img/gallery-4.jpg"
+                           data-title="Community Mobilisation"
+                           data-desc="Our community mobilisers reach remote areas, spreading wellness education and resources to those who need them most."></i>
+                        <h6 class="text-white text-center">Community Mobilisation</h6>
+                        <span class="badge bg-primary mt-1">Community</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 5 - Wellness -->
+            <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="wellness">
+                <div class="gallery-card position-relative overflow-hidden rounded">
+                    <img src="img/gallery-5.jpg" 
+                         alt="Mental Health Run" 
+                         class="w-100 gallery-img" 
+                         loading="lazy"
+                         style="height: 280px; object-fit: cover;">
+                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center p-3">
+                        <i class="fas fa-search-plus fa-2x text-white mb-3 gallery-zoom" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#galleryModal"
+                           data-img="img/gallery-5.jpg"
+                           data-title="Mental Health Awareness Run"
+                           data-desc="Over 300 participants joined our 5km fun run to break the stigma around mental health in Kenya."></i>
+                        <h6 class="text-white text-center">Mental Health Run</h6>
+                        <span class="badge bg-primary mt-1">Wellness</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 6 - Education -->
+            <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="education">
+                <div class="gallery-card position-relative overflow-hidden rounded">
+                    <img src="img/gallery-6.jpg" 
+                         alt="Scholarship Ceremony" 
+                         class="w-100 gallery-img" 
+                         loading="lazy"
+                         style="height: 280px; object-fit: cover;">
+                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center p-3">
+                        <i class="fas fa-search-plus fa-2x text-white mb-3 gallery-zoom" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#galleryModal"
+                           data-img="img/gallery-6.jpg"
+                           data-title="Scholarship Awards"
+                           data-desc="Celebrating our scholarship recipients—bright minds now accessing quality education through the Prof. Olewe Nyunya Foundation."></i>
+                        <h6 class="text-white text-center">Scholarship Awards</h6>
+                        <span class="badge bg-primary mt-1">Education</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 7 - Creative -->
+            <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="creative">
+                <div class="gallery-card position-relative overflow-hidden rounded">
+                    <img src="img/gallery-1.jpg" 
+                         alt="Creative Workshop" 
+                         class="w-100 gallery-img" 
+                         loading="lazy"
+                         style="height: 280px; object-fit: cover;">
+                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center p-3">
+                        <i class="fas fa-search-plus fa-2x text-white mb-3 gallery-zoom" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#galleryModal"
+                           data-img="img/gallery-1.jpg"
+                           data-title="Creative Business Workshop"
+                           data-desc="Artists and entrepreneurs learned how to monetize their talent through branding and business development sessions."></i>
+                        <h6 class="text-white text-center">Creative Workshop</h6>
+                        <span class="badge bg-primary mt-1">Creative</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 8 - Community -->
+            <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="community">
+                <div class="gallery-card position-relative overflow-hidden rounded">
+                    <img src="img/gallery-2.jpg" 
+                         alt="Women Empowerment" 
+                         class="w-100 gallery-img" 
+                         loading="lazy"
+                         style="height: 280px; object-fit: cover;">
+                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center p-3">
+                        <i class="fas fa-search-plus fa-2x text-white mb-3 gallery-zoom" 
+                           data-bs-toggle="modal" 
+                           data-bs-target="#galleryModal"
+                           data-img="img/gallery-2.jpg"
+                           data-title="Women Empowerment Forum"
+                           data-desc="'Professional Women with Ros' brought together female leaders to discuss career growth, mental health, and breaking barriers."></i>
+                        <h6 class="text-white text-center">Women's Forum</h6>
+                        <span class="badge bg-primary mt-1">Community</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noGalleryResults" class="text-center py-5 d-none wow fadeIn">
+            <i class="fas fa-images fa-3x text-muted mb-3"></i>
+            <h4>No images found</h4>
+            <p>Try selecting a different category.</p>
+        </div>
+    </div>
+</div>
+<!-- Gallery End -->
+
+<!-- Gallery Modal (Lightbox) -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content border-0 rounded-0">
+            <div class="modal-header bg-primary-dark text-white border-0">
+                <h5 class="modal-title" id="galleryModalLabel">Image Preview</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0 bg-dark">
+                <img id="galleryModalImg" src="" alt="" class="w-100" style="max-height: 75vh; object-fit: contain;">
+            </div>
+            <div class="modal-footer bg-white border-0 justify-content-between">
+                <div>
+                    <h6 id="galleryModalTitle" class="mb-1"></h6>
+                    <p id="galleryModalDesc" class="text-muted mb-0 small"></p>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Team Start (Carousel) -->
     <div class="container-fluid py-5">
       <div class="container">
@@ -552,7 +765,8 @@
             <div class="row g-5 py-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>P.O. Box 74637-00200, Nairobi, Kenya</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>45 Mukinduri Road, Karen
+Nairobi, Kenyanya</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 716 238 875</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@edendestinygroup.com</p>
                     <div class="d-flex pt-3">
@@ -579,17 +793,33 @@
                     <p class="mb-1">Sunday</p>
                     <h6 class="text-light">Closed</h6>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Gallery</h4>
-                    <div class="row g-2">
-                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-1.jpg" alt=""></div>
-                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-2.jpg" alt=""></div>
-                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-3.jpg" alt=""></div>
-                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-4.jpg" alt=""></div>
-                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-5.jpg" alt=""></div>
-                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-6.jpg" alt=""></div>
-                    </div>
-                </div>
+                 <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Gallery</h4>
+            <div class="row g-2">
+              <div class="col-4">
+                <img class="img-fluid w-100" src="img/gallery-1.jpeg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid w-100" src="img/gallery-2.jpeg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid w-100" src="img/gallery-3.jpeg" alt="" />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid w-100 h-50"
+                  src="img/gallery-4.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid w-100" src="img/gallery-5.jpeg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid w-100" src="img/gallery-6.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
             </div>
             <div class="copyright pt-5">
                 <div class="row">
@@ -643,6 +873,100 @@
         });
     });
     </script>
+    <!-- Gallery Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.gallery-filter');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const noResults = document.getElementById('noGalleryResults');
+    const modalImg = document.getElementById('galleryModalImg');
+    const modalTitle = document.getElementById('galleryModalTitle');
+    const modalDesc = document.getElementById('galleryModalDesc');
+    const modalLabel = document.getElementById('galleryModalLabel');
+
+    // Filter functionality
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+            // Remove active class from all buttons
+            filterButtons.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            const filter = this.getAttribute('data-filter');
+            let visibleCount = 0;
+
+            galleryItems.forEach(item => {
+                const category = item.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    item.classList.remove('hidden');
+                    item.style.opacity = '1';
+                    item.style.transform = 'scale(1)';
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            // Show/hide no results message
+            if (visibleCount === 0) {
+                noResults.classList.remove('d-none');
+            } else {
+                noResults.classList.add('d-none');
+            }
+        });
+    });
+
+    // Lightbox modal
+    const zoomIcons = document.querySelectorAll('.gallery-zoom');
+    zoomIcons.forEach(icon => {
+        icon.addEventListener('click', function (e) {
+            e.stopPropagation(); // prevent triggering twice
+            const imgSrc = this.getAttribute('data-img');
+            const imgTitle = this.getAttribute('data-title');
+            const imgDesc = this.getAttribute('data-desc');
+
+            modalImg.setAttribute('src', imgSrc);
+            modalImg.setAttribute('alt', imgTitle);
+            modalTitle.textContent = imgTitle;
+            modalDesc.textContent = imgDesc;
+            modalLabel.textContent = imgTitle;
+        });
+    });
+
+    // Also allow clicking anywhere on the card to open the modal
+    const galleryCards = document.querySelectorAll('.gallery-card');
+    galleryCards.forEach(card => {
+        card.addEventListener('click', function () {
+            const zoomIcon = this.querySelector('.gallery-zoom');
+            if (zoomIcon) {
+                zoomIcon.click();
+            }
+        });
+    });
+
+    // Clear modal on close
+    const galleryModal = document.getElementById('galleryModal');
+    galleryModal.addEventListener('hidden.bs.modal', function () {
+        modalImg.setAttribute('src', '');
+        modalTitle.textContent = '';
+        modalDesc.textContent = '';
+        modalLabel.textContent = 'Image Preview';
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && galleryModal.classList.contains('show')) {
+            // Bootstrap handles this automatically
+        }
+        if (e.key === 'ArrowRight' && galleryModal.classList.contains('show')) {
+            // Next image (optional – you could implement prev/next)
+        }
+        if (e.key === 'ArrowLeft' && galleryModal.classList.contains('show')) {
+            // Previous image
+        }
+    });
+});
+</script>
 </body>
 
 </html>
