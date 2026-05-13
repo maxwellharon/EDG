@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Governance & Transparency – Eden Destiny Group</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="governance, board of directors, policies, transparency, annual reports, audited financial statements, Kenya, EDG, safeguarding, anti-fraud, child protection" name="keywords">
+    <meta content="Eden Destiny Group maintains the highest standards of governance and transparency. View our organizational structure, board members, policies, annual reports, audited financials, and compliance certificates." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Org Chart Styles */
+        .org-chart {
+            background: #fdf8ea;
+            padding: 2rem;
+            border-radius: 0;
+            position: relative;
+        }
+        .org-level {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .org-card {
+            background: white;
+            border-top: 5px solid #BF6212;
+            padding: 1.2rem 1.5rem;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        .org-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .org-card h5 {
+            color: #1A685B;
+            margin-bottom: 0.25rem;
+        }
+        .org-card .title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #BF6212;
+            font-weight: 600;
+        }
+        .org-connector {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #1A685B;
+            margin: -1rem 0 0.5rem;
+        }
+        .board-card {
+            background: white;
+            border-left: 5px solid #BF6212;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            transition: 0.2s;
+        }
+        .board-card:hover {
+            background: #fef9ef;
+        }
+        .board-card h5 {
+            color: #1A685B;
+            margin-bottom: 0.2rem;
+        }
+        .policy-accordion .accordion-button:not(.collapsed) {
+            background-color: #1A685B;
+            color: white;
+        }
+        .policy-accordion .accordion-button:focus {
+            box-shadow: none;
+            border-color: #BF6212;
+        }
+        .certificate-badge {
+            background: #fdf8ea;
+            padding: 1rem;
+            border-left: 4px solid #BF6212;
+            margin-bottom: 1rem;
+        }
+        .download-btn {
+            background: #1A685B;
+            color: white;
+            padding: 0.5rem 1.2rem;
+            font-size: 0.85rem;
+            transition: 0.2s;
+        }
+        .download-btn:hover {
+            background: #BF6212;
+            color: white;
+        }
+        .stat-transparency {
+            background: #1A685B;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-4 text-center text-lg-start">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Eden Destiny Group Logo" class="navbar-logo">
+                </a>
+            </div>
+            <div class="col-lg-8 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-phone-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Call Us</h6>
+                                <span class="text-white">+254 716 238 875</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-envelope-open text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Mail Us</h6>
+                                <span class="text-white">governance@edendestinygroup.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-map-marker-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Address</h6>
+                                <span class="text-white">45 Mukinduri Road, Karen Nairobi, Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start (Governance Active) -->
+    <div class="container-fluid bg-secondary px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg bg-primary navbar-dark px-4 py-lg-0">
+                <h4 class="d-lg-none m-0">Menu</h4>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav me-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="creative-destiny.html" class="dropdown-item">Creative Destiny</a>
+                                <a href="wellness-destiny.html" class="dropdown-item">Wellness Destiny</a>
+                                <a href="education-destiny.html" class="dropdown-item">Education Destiny</a>
+                                <a href="retail.html" class="dropdown-item">Retail Destiny</a>
+                            </div>
+                        </div>
+                        <a href="impact.html" class="nav-item nav-link">Impact</a>
+                        <a href="partners.html" class="nav-item nav-link">Partners</a>
+                        <a href="governance.html" class="nav-item nav-link active">Governance</a>
+                        <a href="media.html" class="nav-item nav-link">Media</a>
+                        <a href="retail.html" class="nav-item nav-link">Shop</a>
+                        <a href="donation.html" class="nav-item nav-link">Donate</a>
+                        <a href="team.html" class="nav-item nav-link">Team</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-none d-lg-flex ms-auto">
+                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-4">
+            <h1 class="display-3 animated slideInDown">Governance & Transparency</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Governance</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Transparency Statement -->
+    <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7">
+                    <p class="section-title bg-white text-start text-primary pe-3">Our Commitment</p>
+                    <h1 class="display-6 mb-4">Highest Standards of Integrity & Accountability</h1>
+                    <p>Eden Destiny Group is committed to transparent governance, ethical operations, and accountable stewardship of every shilling entrusted to us. Our governance framework ensures that we remain mission-driven, compliant with Kenyan law, and responsive to the communities we serve.</p>
+                    <p>We are registered as a limited liability company in Kenya and operate under the oversight of an active Board of Directors. All our policies, annual reports, and audited financial statements are available below for public review.</p>
+                    <div class="d-flex mt-4">
+                        <a class="btn btn-primary py-3 px-4 me-3" href="#reports">Download Reports</a>
+                        <a class="btn btn-secondary py-3 px-4" href="#policies">View Policies</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="stat-transparency rounded">
+                        <i class="fa fa-shield-alt fa-3x mb-3"></i>
+                        <h3 class="text-white">Fully Compliant</h3>
+                        <p class="mb-0">KRA Tax Compliant • Copyright Registered • Data Protection Act Ready</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Organizational Chart -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                <p class="section-title bg-light text-center text-primary px-3">Structure</p>
+                <h2 class="display-6 mb-5">Organizational Chart</h2>
+            </div>
+            <div class="org-chart wow fadeIn" data-wow-delay="0.2s">
+                <!-- Level 1: Board of Directors -->
+                <div class="org-level">
+                    <div class="org-card">
+                        <h5>Board of Directors</h5>
+                        <div class="title">Governing Body</div>
+                        <small>Strategic oversight & fiduciary duty</small>
+                    </div>
+                </div>
+                <div class="org-connector"><i class="fas fa-arrow-down"></i></div>
+                <!-- Level 2: Founder & MD -->
+                <div class="org-level">
+                    <div class="org-card">
+                        <h5>Roselyne Olewe</h5>
+                        <div class="title">Founder & Executive Director</div>
+                        <small>Overall leadership & strategy</small>
+                    </div>
+                </div>
+                <div class="org-connector"><i class="fas fa-arrow-down"></i></div>
+                <!-- Level 3: Four Destiny Units + Support Functions -->
+                <div class="org-level">
+                    <div class="org-card">
+                        <h5>Creative Destiny</h5>
+                        <div class="title">Hezekia Watta</div>
+                        <small>Creative Director</small>
+                    </div>
+                    <div class="org-card">
+                        <h5>Wellness Destiny</h5>
+                        <div class="title">Lisa Beryl Ondiek</div>
+                        <small>Program Director</small>
+                    </div>
+                    <div class="org-card">
+                        <h5>Education Destiny</h5>
+                        <div class="title">Joab Okore</div>
+                        <small>Cultural Editor</small>
+                    </div>
+                    <div class="org-card">
+                        <h5>Retail Destiny</h5>
+                        <div class="title">Kraig Dixon Ochieng</div>
+                        <small>Data & Operations Lead</small>
+                    </div>
+                </div>
+                <div class="org-level">
+                    <div class="org-card">
+                        <h5>Risk & Compliance</h5>
+                        <div class="title">Elizabeth Mutheu Mutemi</div>
+                        <small>Risk, Finance & Compliance</small>
+                    </div>
+                    <div class="org-card">
+                        <h5>Community Mobilization</h5>
+                        <div class="title">Bernard Nyasanga</div>
+                        <small>Community Mobilizer</small>
+                    </div>
+                    <div class="org-card">
+                        <h5>Architecture & Creative</h5>
+                        <div class="title">Kristian Daniel Onyango</div>
+                        <small>Creative & Design</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Board of Directors Section -->
+    <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <p class="section-title bg-white text-center text-primary px-3">Leadership</p>
+                <h2 class="display-6">Board of Directors & Advisory Committee</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="board-card">
+                        <h5>Roselyne Olewe</h5>
+                        <p class="text-primary mb-1">Founder & Managing Director (Executive Director)</p>
+                        <small>Roselyne leads EDG's strategic vision, partnership development, and overall operations. With over 15 years in creative enterprise and social impact, she ensures that EDG remains mission-aligned and financially sustainable.</small>
+                    </div>
+                    <div class="board-card">
+                        <h5>Silas Ogada</h5>
+                        <p class="text-primary mb-1">Non-Executive Director</p>
+                        <small>Silas brings extensive experience in risk management and institutional governance. As Head of Risk at EADB, he provides oversight on compliance, fiduciary responsibility, and strategic risk assessment. (Unpaid/NED position)</small>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="board-card">
+                        <h5>Elizabeth Mutheu Mutemi</h5>
+                        <p class="text-primary mb-1">Board Secretary & Risk Committee Lead</p>
+                        <small>Elizabeth oversees financial compliance, internal audits, and policy implementation. She chairs the Risk & Audit sub-committee and ensures EDG adheres to statutory regulations.</small>
+                    </div>
+                    <div class="board-card">
+                        <h5>Hezekia Watta</h5>
+                        <p class="text-primary mb-1">Advisory Board Member (Creative Economy)</p>
+                        <small>Hezekia advises on creative industry trends, artist development, and content strategy. His expertise ensures that EDG's creative programmes remain innovative and relevant.</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Committees -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h4 class="mb-3">Board Committees</h4>
+                    <div class="row g-3">
+                        <div class="col-md-4"><div class="bg-light p-3"><i class="fa fa-chart-line text-primary me-2"></i> <strong>Audit & Risk Committee</strong><br>Elizabeth Mutemi (Chair), Silas Ogada</div></div>
+                        <div class="col-md-4"><div class="bg-light p-3"><i class="fa fa-hand-holding-heart text-primary me-2"></i> <strong>Programme & Impact Committee</strong><br>Roselyne Olewe, Hezekia Watta</div></div>
+                        <div class="col-md-4"><div class="bg-light p-3"><i class="fa fa-scale-balanced text-primary me-2"></i> <strong>Governance & Nominations</strong><br>Silas Ogada, Elizabeth Mutemi</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Policies Accordion (Key Governance Documents) -->
+    <div class="container-fluid py-5 bg-light" id="policies">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <p class="section-title bg-light text-center text-primary px-3">Policies & Safeguards</p>
+                <h2 class="display-6">Our Institutional Policies</h2>
+                <p>All policies are reviewed annually and align with Kenyan law, child protection standards, and international best practices.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion policy-accordion" id="policyAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#safeguarding">Safeguarding Policy</button></h2>
+                            <div id="safeguarding" class="accordion-collapse collapse show" data-bs-parent="#policyAccordion">
+                                <div class="accordion-body">EDG is committed to preventing harm and protecting all beneficiaries, especially children and vulnerable adults. This policy outlines reporting mechanisms, staff training requirements, and zero tolerance for abuse. All employees and partners sign a safeguarding code of conduct.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#antifraud">Anti-Fraud & Corruption Policy</button></h2>
+                            <div id="antifraud" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+                                <div class="accordion-body">EDG maintains strict internal controls, segregation of duties, and whistleblower protections. Any suspected fraud is investigated immediately, and legal action is pursued. Annual external audits verify financial integrity.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#childprotection">Child Protection Policy</button></h2>
+                            <div id="childprotection" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+                                <div class="accordion-body">We adhere to the UN Convention on the Rights of the Child and Kenyan Children's Act. All staff working with children undergo background checks, and programmes include child-safe spaces, consent protocols, and reporting pathways.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#diversity">Diversity & Inclusion Policy</button></h2>
+                            <div id="diversity" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+                                <div class="accordion-body">EDG actively promotes inclusion of persons with disabilities, women, youth, and marginalized communities. Our recruitment, programming, and partnerships reflect our commitment to equity. 40% of our staff are from underrepresented groups.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#procurement">Procurement Policy</button></h2>
+                            <div id="procurement" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+                                <div class="accordion-body">Transparent, competitive bidding for all goods and services above KES 100,000. We prioritize local suppliers, women-owned businesses, and environmental sustainability.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#whistleblower">Whistleblower Policy</button></h2>
+                            <div id="whistleblower" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+                                <div class="accordion-body">Confidential reporting channel available for staff, partners, and beneficiaries to report misconduct without fear of retaliation. Reports can be made anonymously to governance@edendestinygroup.com.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Annual Reports & Financial Statements -->
+    <div class="container-fluid py-5 wow fadeIn" id="reports">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <p class="section-title bg-white text-center text-primary px-3">Accountability</p>
+                <h2 class="display-6">Annual Reports & Audited Financials</h2>
+                <p>We believe in radical transparency. Below are our latest public documents.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="certificate-badge d-flex justify-content-between align-items-center">
+                        <div><i class="fa fa-file-pdf fa-2x text-primary me-3"></i> <strong>Annual Report 2025</strong><br><small>Full year impact, financial summary, case studies</small></div>
+                        <a href="#" class="btn download-btn btn-sm">Download PDF <i class="fa fa-download ms-2"></i></a>
+                    </div>
+                    <div class="certificate-badge d-flex justify-content-between align-items-center">
+                        <div><i class="fa fa-file-pdf fa-2x text-primary me-3"></i> <strong>Annual Report 2024</strong><br><small>18 counties, 9,400+ beneficiaries, awards</small></div>
+                        <a href="#" class="btn download-btn btn-sm">Download PDF <i class="fa fa-download ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="certificate-badge d-flex justify-content-between align-items-center">
+                        <div><i class="fa fa-chart-simple fa-2x text-primary me-3"></i> <strong>Audited Financial Statements 2025</strong><br><small>Independent auditor's report, balance sheet</small></div>
+                        <a href="#" class="btn download-btn btn-sm">Download PDF <i class="fa fa-download ms-2"></i></a>
+                    </div>
+                    <div class="certificate-badge d-flex justify-content-between align-items-center">
+                        <div><i class="fa fa-chart-simple fa-2x text-primary me-3"></i> <strong>Audited Financial Statements 2024</strong><br><small>Full audit by registered CPA firm</small></div>
+                        <a href="#" class="btn download-btn btn-sm">Download PDF <i class="fa fa-download ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4"><a href="#" class="text-primary">View all reports from 2020 →</a></div>
+        </div>
+    </div>
+
+    <!-- Certificates & Registrations -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <p class="section-title bg-light text-center text-primary px-3">Legal & Compliance</p>
+                <h2 class="display-6">Registration & Certificates</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="certificate-badge">
+                        <i class="fa fa-building text-primary me-2"></i> 
+                        <strong>Certificate of Incorporation</strong><br>
+                        Eden Destiny Group Ltd – Registration No. CP/2023/98765
+                    </div>
+                    <div class="certificate-badge">
+                        <i class="fa fa-file-invoice text-primary me-2"></i> 
+                        <strong>KRA Tax Compliance Certificate</strong><br>
+                        PIN: P052423247Y | Certificate No. KRANON1465211325 | Valid until 09/04/2026
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="certificate-badge">
+                        <i class="fa fa-copyright text-primary me-2"></i> 
+                        <strong>Copyright Registration – BODA BODA</strong><br>
+                        Literary Work No. RZ86478 | Kenya Copyright Board
+                    </div>
+                    <div class="certificate-badge">
+                        <i class="fa fa-handshake text-primary me-2"></i> 
+                        <strong>Data Protection Impact Assessment (DPIA)</strong><br>
+                Compliant with Kenya Data Protection Act, 2019
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="small text-muted">For due diligence requests, contact governance@edendestinygroup.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- M&E & Accountability Narrative -->
+    <div class="container-fluid py-5 wow fadeIn">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Monitoring & Evaluation (M&E) Capability</h3>
+                    <p>EDG employs a robust M&E framework to track outputs, outcomes, and impact. All programmes use standardized indicators aligned with SDGs. We collect disaggregated data (age, gender, disability, county) and produce quarterly internal reports for board review.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-check-circle text-primary me-2"></i> Theory of Change developed for each Destiny unit</li>
+                        <li><i class="fa fa-check-circle text-primary me-2"></i> Results-based management (RBM) approach</li>
+                        <li><i class="fa fa-check-circle text-primary me-2"></i> Third-party evaluations every 2 years</li>
+                        <li><i class="fa fa-check-circle text-primary me-2"></i> Beneficiary feedback loops via community dialogs</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-primary text-white p-4 text-center rounded">
+                        <i class="fa fa-chart-gantt fa-3x mb-3"></i>
+                        <h5 class="text-white">Open for Due Diligence</h5>
+                        <p>We welcome donor site visits, background checks, and reference calls with existing partners. Our governance documents are available upon request.</p>
+                        <a href="contact.html" class="btn btn-secondary mt-2">Request Due Diligence Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter & Footer -->
+    <div class="container-fluid bg-primary py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 mb-4">Stay Updated on EDG Governance</h1>
+                    <div class="position-relative w-100 mb-2">
+                        <input class="form-control border-0 w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 60px;">
+                        <button type="button" class="btn btn-lg-square shadow-none position-absolute top-0 end-0 mt-2 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <p class="mb-0">Subscribe for annual reports and transparency updates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>45 Mukinduri Road, Karen Nairobi, Kenya</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 716 238 875</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>governance@edendestinygroup.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary me-2" href="#!"><i class="fab fa-x-twitter"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="#!"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="impact.html">Impact & Results</a>
+                    <a class="btn btn-link" href="partners.html">Partners</a>
+                    <a class="btn btn-link" href="governance.html">Governance</a>
+                    <a class="btn btn-link" href="donation.html">Donate</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">08:00 am - 05:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-1.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-2.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-3.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-4.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-5.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-6.jpeg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright pt-5">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="fw-semi-bold" href="index.html">Eden Destiny Group Ltd</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
