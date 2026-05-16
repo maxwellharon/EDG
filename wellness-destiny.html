@@ -8,7 +8,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3ZHE90YRLF');
 </script>
     <meta charset="utf-8">
@@ -34,9 +33,42 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .donor-block {
+            background: #fdf8ea;
+            border-left: 5px solid #BF6212;
+            padding: 1.8rem;
+            margin: 2rem 0;
+        }
+        .donor-block h4 {
+            color: #1A685B;
+            margin-bottom: 1rem;
+        }
+        .metric-badge {
+            display: inline-block;
+            background: #1A685B;
+            color: white;
+            padding: 0.3rem 1rem;
+            font-size: 0.75rem;
+            border-radius: 30px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .btn-outline-download {
+            border: 2px solid #BF6212;
+            color: #BF6212;
+            background: transparent;
+            transition: 0.2s;
+        }
+        .btn-outline-download:hover {
+            background: #BF6212;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -51,7 +83,6 @@
         <div class="row align-items-center h-100">
             <div class="col-lg-4 text-center text-lg-start">
                <a href="index.html">
-        <!-- Added the 'navbar-logo' class -->
         <img src="img/logo.png" alt="logo" class="navbar-logo">
     </a>
             </div>
@@ -86,8 +117,7 @@
                             </div>
                             <div class="ms-2">
                                 <h6 class="text-primary mb-0">Address</h6>
-                                <span class="text-white">45 Mukinduri Road, Karen
-Nairobi, Kenya</span>
+                                <span class="text-white">45 Mukinduri Road, Karen Nairobi, Kenya</span>
                             </div>
                         </div>
                     </div>
@@ -107,41 +137,26 @@ Nairobi, Kenya</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav me-auto">
-                    
-                    <!-- Core Pages -->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    
-                    <!-- Services Dropdown -->
                     <div class="nav-item dropdown">
                         <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <div class="dropdown-menu bg-light m-0">
                             <a href="creative-destiny.html" class="dropdown-item">Creative Destiny</a>
-                            <a href="wellness-destiny.html" class="dropdown-item">Wellness Destiny</a>
+                            <a href="wellness-destiny.html" class="dropdown-item active">Wellness Destiny</a>
                             <a href="education-destiny.html" class="dropdown-item">Education Destiny</a>
                             <a href="retail.html" class="dropdown-item">Retail Destiny</a>
                         </div>
                     </div>
-
-                    <!-- NEW: Institutional Trust Pages (for donors & partners) -->
                     <a href="impact.html" class="nav-item nav-link">Impact</a>
                     <a href="partners.html" class="nav-item nav-link">Partners</a>
                     <a href="governance.html" class="nav-item nav-link">Governance</a>
-                    
-                    <!-- NEW: Thought Leadership -->
                     <a href="media.html" class="nav-item nav-link">Media</a>
-                    
-                    <!-- Retail (standalone for visibility) -->
                     <a href="retail.html" class="nav-item nav-link">Shop</a>
-                    
-                    <!-- Action Pages -->
                     <a href="donation.html" class="nav-item nav-link">Donate</a>
                     <a href="team.html" class="nav-item nav-link">Team</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    
                 </div>
-                
-                <!-- Desktop Social Icons -->
                 <div class="d-none d-lg-flex ms-auto">
                     <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-facebook-f"></i></a>
@@ -153,6 +168,7 @@ Nairobi, Kenya</span>
     </div>
 </div>
 <!-- Navbar End -->
+
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-4">
@@ -180,7 +196,7 @@ Nairobi, Kenya</span>
                 <div class="col-lg-6">
                     <p class="section-title bg-white text-start text-primary pe-3">Wellness Destiny</p>
                     <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">Holistic Health for All</h1>
-                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">Wellness Destiny is dedicated to promoting wholistic wellness through events that bring together stakeholders from the wellness industry. Wellness is an active process of becoming aware of and making choices toward a healthy and fulfilling life, not merely the absence of illness, but a dynamic process of change and growth.</p>
+                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">Wellness Destiny is dedicated to promoting wholistic wellness through events that bring together stakeholders from the wellness industry. Wellness is an active process of becoming aware of and making choices toward a healthy and fulfilling life.</p>
                     <p class="mb-4 wow fadeIn" data-wow-delay="0.4s">Mental health is a cornerstone of our work. Our founder is a passionate mental health advocate, and we design programmes that address physical, mental, and social well‑being.</p>
                     <div class="d-flex mt-4 wow fadeIn" data-wow-delay="0.5s">
                         <a class="btn btn-primary py-3 px-4 me-3" href="donation.html">Support Wellness</a>
@@ -191,6 +207,102 @@ Nairobi, Kenya</span>
         </div>
     </div>
     <!-- Overview End -->
+
+    <!-- DONOR-READY PROGRAMME BLOCK (Institutional) -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                <p class="section-title bg-light text-center text-primary px-3">For Partners & Donors</p>
+                <h2 class="display-6 mb-4">Wellness Destiny Programme Overview</h2>
+                <p class="mb-5">A structured mental health and wellness intervention designed for scalability and measurable impact.</p>
+            </div>
+            
+            <div class="row g-5">
+                <!-- Left Column: Problem & Target -->
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="donor-block">
+                        <h4><i class="fa fa-exclamation-triangle text-primary me-2"></i> Problem Statement</h4>
+                        <p>Kenya faces a severe mental health crisis: 1 in 4 Kenyans experiences a mental health condition, yet only 10% access care. Stigma, lack of affordable services, and limited trained professionals leave millions untreated, affecting productivity, family stability, and community safety.</p>
+                    </div>
+                    <div class="donor-block">
+                        <h4><i class="fa fa-users text-primary me-2"></i> Target Beneficiaries</h4>
+                        <p><span class="metric-badge">Youth (18-35)</span> <span class="metric-badge">Women</span> <span class="metric-badge">Corporate Employees</span> <span class="metric-badge">Persons with Disabilities</span> <span class="metric-badge">Rural Communities</span></p>
+                        <p class="mt-2">Priority: Underserved populations in 18 counties, with a focus on low-income urban settlements and remote rural areas.</p>
+                    </div>
+                    <div class="donor-block">
+                        <h4><i class="fa fa-map-marked-alt text-primary me-2"></i> Geographic Coverage</h4>
+                        <p><strong>Current:</strong> 18 counties including Nairobi, Kisumu, Kiambu, Mombasa, Kisii, Nakuru<br>
+                        <strong>Planned (2026-2027):</strong> Expansion to all 47 counties + virtual national reach via Serene Mind platform.</p>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Outcomes & Budget -->
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="donor-block">
+                        <h4><i class="fa fa-chart-line text-primary me-2"></i> Expected Outcomes</h4>
+                        <ul class="mb-0">
+                            <li>30% reduction in self-reported anxiety/depression symptoms among beneficiaries</li>
+                            <li>5,000+ individuals reached annually through expos and workshops</li>
+                            <li>100+ community mental health champions trained</li>
+                            <li>20+ corporate wellness programmes implemented</li>
+                            <li>Sustainable virtual therapy platform (Serene Mind) serving 10,000+ users by 2027</li>
+                        </ul>
+                    </div>
+                    <div class="donor-block">
+                        <h4><i class="fa fa-coins text-primary me-2"></i> Budget & Funding Needs</h4>
+                        <p><strong>Annual programme budget:</strong> KSh 8.5 million (~USD 65,000)</p>
+                        <p><strong>Funding gap:</strong> KSh 5.2 million (~USD 40,000)</p>
+                        <p><strong>Use of funds:</strong> Wellness expos (35%), therapist stipends (25%), community training (20%), M&E (10%), operational (10%)</p>
+                        <a href="donation.html" class="btn btn-primary btn-sm mt-2">Fund This Programme →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Current Achievements & M&E -->
+            <div class="row g-4 mt-4">
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="donor-block">
+                        <h4><i class="fa fa-trophy text-primary me-2"></i> Current Achievements</h4>
+                        <ul class="mb-0">
+                            <li>5,000+ mental health beneficiaries reached (2025)</li>
+                            <li>3 annual Wellness Expos held (2023-2025)</li>
+                            <li>45 community health workers trained</li>
+                            <li>15 corporate wellness partnerships established</li>
+                            <li>Serene Mind virtual platform launched (2025) – 500+ consultations completed</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="donor-block">
+                        <h4><i class="fa fa-microphone-alt text-primary me-2"></i> Monitoring Indicators</h4>
+                        <ul class="mb-0">
+                            <li>Pre/post programme PHQ-9/GAD-7 scores</li>
+                            <li>Beneficiary satisfaction surveys (target: 85%+)</li>
+                            <li>Number of sessions delivered / referrals made</li>
+                            <li>Quarterly external evaluation reports</li>
+                            <li>Qualitative case studies collected bi-annually</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Partnership Opportunities -->
+            <div class="text-center mt-5 wow fadeIn" data-wow-delay="0.6s">
+                <div class="bg-primary text-white p-4 rounded">
+                    <h4 class="text-white mb-3"><i class="fa fa-handshake me-2"></i> Partnership Opportunities</h4>
+                    <p>We invite foundations, CSR departments, health insurers, and corporate partners to collaborate.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                        <span class="badge bg-light text-dark p-2">Wellness Expo Sponsorship</span>
+                        <span class="badge bg-light text-dark p-2">Mental Health Champion Training</span>
+                        <span class="badge bg-light text-dark p-2">Corporate Wellness Packages</span>
+                        <span class="badge bg-light text-dark p-2">Therapist Stipend Funding</span>
+                        <span class="badge bg-light text-dark p-2">Research Collaboration</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-secondary mt-4">Become a Partner →</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Core Pillars Start -->
     <div class="container-fluid py-5">
@@ -232,18 +344,17 @@ Nairobi, Kenya</span>
     </div>
     <!-- Core Pillars End -->
 
-    <!-- ========== SERENE MIND SECTION (Infographic Style) ========== -->
+    <!-- ========== SERENE MIND SECTION ========== -->
     <div class="container-fluid py-5" style="background: linear-gradient(135deg, #edf7f0 0%, #ffffff 100%);">
         <div class="container">
             <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <p class="section-title bg-white text-center text-primary px-3">Virtual Care</p>
                 <h1 class="display-6 mb-3">Serene Mind</h1>
                 <p class="lead mb-2">The 5‑Minute Check‑In</p>
-                <p class="fs-5 mb-4">5 minutes for <strong>5,000</strong> – A quick, focused session with a specialist.</p>
-                <p class="mb-5"><i class="fa fa-map-marker-alt text-primary me-2"></i>Our mental wellness doctors are based in <strong>Kampala, Uganda</strong> but available for <strong>virtual meetings</strong> worldwide via the <a href="https://www.serenemind.app" target="_blank" class="fw-bold text-primary">www.serenemind.app</a></p>
+                <p class="fs-5 mb-4">5 minutes for <strong>KSh 5,000</strong> – A quick, focused session with a specialist.</p>
+                <p class="mb-5"><i class="fa fa-map-marker-alt text-primary me-2"></i>Our mental wellness doctors are based in <strong>Kampala, Uganda</strong> but available for <strong>virtual meetings</strong> worldwide via <a href="https://www.serenemind.app" target="_blank" class="fw-bold text-primary">www.serenemind.app</a></p>
             </div>
             <div class="row g-4 justify-content-center">
-                <!-- Step 1 -->
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
                     <div class="bg-white rounded shadow-sm p-4 h-100 text-center border-top border-primary border-3">
                         <div class="btn-square bg-primary mx-auto mb-3" style="width: 50px; height: 50px;">
@@ -253,7 +364,6 @@ Nairobi, Kenya</span>
                         <p class="text-muted">Book your 5 focused minutes. Keep it intentional – one topic, one goal.</p>
                     </div>
                 </div>
-                <!-- Step 2 -->
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
                     <div class="bg-white rounded shadow-sm p-4 h-100 text-center border-top border-primary border-3">
                         <div class="btn-square bg-primary mx-auto mb-3" style="width: 50px; height: 50px;">
@@ -263,34 +373,31 @@ Nairobi, Kenya</span>
                         <p class="text-muted">Choose from The Serene Mind's list of specialists. Filter by area of focus.</p>
                     </div>
                 </div>
-                <!-- Step 3 -->
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                     <div class="bg-white rounded shadow-sm p-4 h-100 text-center border-top border-primary border-3">
                         <div class="btn-square bg-primary mx-auto mb-3" style="width: 50px; height: 50px;">
                             <i class="fa fa-calendar-check text-dark fs-5"></i>
                         </div>
                         <h5>Step 3: Book Within Their Hours</h5>
-                        <p class="text-muted">Select a slot inside the specialist's posted booking hours. No outside‑hour requests.</p>
+                        <p class="text-muted">Select a slot inside the specialist's posted booking hours.</p>
                     </div>
                 </div>
-                <!-- Step 4 -->
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
                     <div class="bg-white rounded shadow-sm p-4 h-100 text-center border-top border-primary border-3">
                         <div class="btn-square bg-primary mx-auto mb-3" style="width: 50px; height: 50px;">
                             <i class="fa fa-phone text-dark fs-5"></i>
                         </div>
-                        <h5>Step 4: Get The Call & Use Your Time</h5>
-                        <p class="text-muted">Your therapist calls you at the booked time. Be ready at minute 0 to maximize your 5.</p>
+                        <h5>Step 4: Get The Call</h5>
+                        <p class="text-muted">Your therapist calls you at the booked time. Be ready at minute 0.</p>
                     </div>
                 </div>
-                <!-- Step 5 -->
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                     <div class="bg-white rounded shadow-sm p-4 h-100 text-center border-top border-primary border-3">
                         <div class="btn-square bg-primary mx-auto mb-3" style="width: 50px; height: 50px;">
                             <i class="fa fa-clipboard-check text-dark fs-5"></i>
                         </div>
                         <h5>Step 5: Wrap & Next Steps</h5>
-                        <p class="text-muted">Session ends after 5 minutes. You'll get notes or a recommendation for follow‑up if needed.</p>
+                        <p class="text-muted">Session ends after 5 minutes. You'll get notes or recommendations.</p>
                     </div>
                 </div>
             </div>
@@ -302,7 +409,7 @@ Nairobi, Kenya</span>
     </div>
     <!-- ========== END SERENE MIND SECTION ========== -->
 
-    <!-- Upcoming Events (reuse event style) -->
+    <!-- Upcoming Events -->
     <div id="events" class="container-fluid py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
@@ -393,8 +500,7 @@ Nairobi, Kenya</span>
             <div class="row g-5 py-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>45 Mukinduri Road, Karen
-Nairobi, Kenyanya</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>45 Mukinduri Road, Karen Nairobi, Kenya</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 743 170 233</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@edendestinygroup.org</p>
                     <div class="d-flex pt-3">
@@ -411,6 +517,7 @@ Nairobi, Kenyanya</p>
                     <a class="btn btn-link" href="creative-destiny.html">Creative Destiny</a>
                     <a class="btn btn-link" href="education-destiny.html">Education Destiny</a>
                     <a class="btn btn-link" href="donation.html">Donate</a>
+                    <a class="btn btn-link" href="mailto:governance@edendestinygroup.org">Whistleblower</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Business Hours</h4>
@@ -421,42 +528,23 @@ Nairobi, Kenyanya</p>
                     <p class="mb-1">Sunday</p>
                     <h6 class="text-light">Closed</h6>
                 </div>
-                 <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Gallery</h4>
-            <div class="row g-2">
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-1.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-2.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-3.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid w-100 h-50"
-                  src="img/gallery-4.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-5.jpeg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="img/gallery-6.jpeg" alt="" />
-              </div>
-            </div>
-          </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-1.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-2.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-3.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-4.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-5.jpeg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="img/gallery-6.jpeg" alt=""></div>
+                    </div>
+                </div>
             </div>
             <div class="copyright pt-5">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a class="fw-semi-bold" href="index.html">Eden Destiny Group Ltd</a>, All Right Reserved.
                     </div>
-                    <!-- <div class="col-md-6 text-center text-md-end">
-                        Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>. Distributed by <a class="fw-semi-bold" href="https://themewagon.com">ThemeWagon</a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -474,9 +562,9 @@ Nairobi, Kenyanya</p>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>new WOW().init();</script>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
