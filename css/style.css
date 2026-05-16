@@ -925,3 +925,13 @@
         letter-spacing: 0.3px;
     }
 }
+
+.stat-clickable {
+    cursor: pointer;
+}
+
+.modal-story-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
