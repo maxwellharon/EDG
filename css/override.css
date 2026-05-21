@@ -1,0 +1,645 @@
+/*****************************************************
+ * EDEN DESTINY GROUP – BALANCED MASTER COLOR OVERRIDE
+ * Greens first, professional, with warm gold accents
+ *****************************************************/
+
+:root {
+    --edg-primary: #0F8231;
+    /* Hills Medium Green */
+    --edg-primary-dark: #18411F;
+    /* Hills Dark Green */
+    --edg-secondary: #169F40;
+    /* Bright Green Accent */
+    --edg-dark-text: #3E4042;
+    /* Logo Dark Gray */
+    --edg-red-accent: #E51921;
+    /* Left Accent Line Red (tiny use) */
+    --edg-gold-light: #FDC82F;
+    /* Sun Rays Light Gold */
+    --edg-gold-dark: #D9811C;
+    /* Sun Rays Dark Orange/Gold */
+    --edg-orange-core: #BF6212;
+    /* Sun Core Darker Orange */
+    --edg-white: #FFFFFF;
+    --edg-light-bg: #FDF8EA;
+    /* Keep original light cream */
+    --edg-footer-bg: #051311;
+    /* Keep original footer dark */
+}
+
+/* ============================================= */
+/* 1. TOP BAR                                    */
+/* ============================================= */
+.top-bar,
+.container-fluid.bg-secondary.top-bar {
+    background-color: var(--edg-primary) !important;
+}
+
+.top-bar h6 {
+    color: var(--edg-white) !important;
+}
+
+.top-bar span {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.top-bar .btn-square.bg-primary {
+    background-color: var(--edg-secondary) !important;
+}
+
+.top-bar .btn-square i {
+    color: var(--edg-white) !important;
+}
+
+/* ============================================= */
+/* 2. NAVBAR                                     */
+/* ============================================= */
+.nav-bar .navbar.bg-primary {
+    background-color: var(--edg-primary-dark) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--edg-white) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Dropdown */
+.navbar .dropdown-menu {
+    background-color: var(--edg-white) !important;
+}
+
+.navbar .dropdown-item {
+    color: var(--edg-dark-text) !important;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item.active {
+    background-color: var(--edg-secondary) !important;
+    color: var(--edg-white) !important;
+}
+
+/* ============================================= */
+/* 3. PAGE HEADER (BREADCRUMB)                   */
+/* ============================================= */
+.page-header {
+    background: linear-gradient(rgba(15, 130, 49, 0.85), rgba(24, 65, 31, 0.85)),
+        url(../img/bg.jpg) center center no-repeat !important;
+    background-size: cover !important;
+}
+
+.page-header h1 {
+    color: var(--edg-white) !important;
+}
+
+.page-header .breadcrumb-item a {
+    color: var(--edg-gold-light) !important;
+}
+
+.page-header .breadcrumb-item.active {
+    color: var(--edg-white) !important;
+}
+
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--edg-gold-light) !important;
+}
+
+/* ============================================= */
+/* 4. HEADINGS & BODY TEXT                       */
+/* ============================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    color: var(--edg-primary-dark) !important;
+}
+
+p,
+span,
+li,
+.text-body,
+body {
+    color: var(--edg-dark-text);
+}
+
+/* ============================================= */
+/* 5. LINKS                                      */
+/* ============================================= */
+a {
+    color: var(--edg-secondary) !important;
+}
+
+a:hover {
+    color: var(--edg-orange-core) !important;
+}
+
+/* ============================================= */
+/* 6. SECTION TITLE LINES                        */
+/* ============================================= */
+.section-title::before {
+    border-top: 2px solid var(--edg-secondary) !important;
+}
+
+.section-title::after {
+    border-bottom: 2px solid var(--edg-secondary) !important;
+}
+
+.section-title {
+    color: var(--edg-primary) !important;
+}
+
+/* ============================================= */
+/* 7. BUTTONS                                    */
+/* ============================================= */
+
+/* Primary buttons (green) */
+.btn-primary,
+.donate .donate-form .btn-group .btn-check:checked+.btn {
+    background-color: var(--edg-primary) !important;
+    border-color: var(--edg-primary) !important;
+    color: var(--edg-white) !important;
+}
+
+.btn-primary:hover,
+.btn-check:checked+.btn-primary,
+.btn-primary:active {
+    background-color: var(--edg-primary-dark) !important;
+    border-color: var(--edg-primary-dark) !important;
+    color: var(--edg-gold-light) !important;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(15, 130, 49, 0.25) !important;
+}
+
+/* Secondary buttons (bright green) */
+.btn-secondary {
+    background-color: var(--edg-secondary) !important;
+    border-color: var(--edg-secondary) !important;
+    color: var(--edg-white) !important;
+}
+
+.btn-secondary:hover,
+.btn-check:checked+.btn-secondary,
+.btn-secondary:active {
+    background-color: var(--edg-primary) !important;
+    border-color: var(--edg-primary) !important;
+    color: var(--edg-gold-light) !important;
+}
+
+/* Outline buttons */
+.btn-outline-primary {
+    color: var(--edg-primary) !important;
+    border-color: var(--edg-primary) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--edg-primary) !important;
+    color: var(--edg-white) !important;
+}
+
+.btn-outline-secondary {
+    color: var(--edg-secondary) !important;
+    border-color: var(--edg-secondary) !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--edg-secondary) !important;
+    color: var(--edg-white) !important;
+}
+
+/* Dark small buttons (navbar social) */
+.btn-dark,
+.btn-square.btn-dark {
+    background-color: var(--edg-primary-dark) !important;
+    border-color: var(--edg-primary-dark) !important;
+    color: var(--edg-white) !important;
+}
+
+.btn-dark:hover,
+.btn-square.btn-dark:hover {
+    background-color: var(--edg-gold-dark) !important;
+    border-color: var(--edg-gold-dark) !important;
+    color: var(--edg-white) !important;
+}
+
+/* ============================================= */
+/* 8. FORMS                                      */
+/* ============================================= */
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    border-color: var(--edg-secondary) !important;
+    box-shadow: 0 0 0 0.25rem rgba(22, 159, 64, 0.2) !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--edg-primary) !important;
+    border-color: var(--edg-primary) !important;
+}
+
+/* ============================================= */
+/* 9. DONATION ITEMS & PROGRESS BARS             */
+/* ============================================= */
+.donation-item .progress .progress-bar,
+.progress-bar {
+    background-color: var(--edg-secondary) !important;
+}
+
+.donation-item .donation-progress span,
+.donation-item h6 {
+    color: var(--edg-dark-text) !important;
+}
+
+.donation-detail .h3,
+.donation-detail a.h3 {
+    color: var(--edg-primary-dark) !important;
+}
+
+.donation-detail a.h3:hover {
+    color: var(--edg-orange-core) !important;
+}
+
+/* ============================================= */
+/* 10. EVENT ITEMS                               */
+/* ============================================= */
+.event-item .h3,
+.event-item a.h3 {
+    color: var(--edg-primary-dark) !important;
+}
+
+.event-item .h3:hover,
+.event-item a.h3:hover {
+    color: var(--edg-orange-core) !important;
+}
+
+.event-item .fa {
+    color: var(--edg-secondary) !important;
+}
+
+/* ============================================= */
+/* 11. SERVICE ITEMS                             */
+/* ============================================= */
+.service-item a {
+    color: var(--edg-primary) !important;
+}
+
+.service-item a:hover {
+    color: var(--edg-orange-core) !important;
+}
+
+.service-item a::after {
+    border-bottom: 2px solid var(--edg-secondary) !important;
+}
+
+.service-item h3 {
+    color: var(--edg-primary-dark) !important;
+}
+
+.service-item .btn-square.bg-light {
+    background-color: rgba(22, 159, 64, 0.1) !important;
+}
+
+.service-item .btn-square i {
+    color: var(--edg-secondary) !important;
+}
+
+/* ============================================= */
+/* 12. FEATURES / STATS BOXES                    */
+/* ============================================= */
+.text-center.bg-primary {
+    background-color: var(--edg-primary) !important;
+}
+
+.text-center.bg-secondary {
+    background-color: var(--edg-primary-dark) !important;
+}
+
+.text-center.bg-primary span {
+    color: var(--edg-white) !important;
+}
+
+.text-center.bg-secondary span {
+    color: var(--edg-white) !important;
+}
+
+.text-center.bg-primary i {
+    color: var(--edg-gold-light) !important;
+}
+
+.text-center.bg-secondary i {
+    color: var(--edg-gold-light) !important;
+}
+
+/* ============================================= */
+/* 13. ABOUT SECTION                             */
+/* ============================================= */
+.about-img::before,
+.about-img::after {
+    background: var(--edg-light-bg) !important;
+}
+
+.bg-primary.p-4.text-center p {
+    color: var(--edg-white) !important;
+}
+
+/* ============================================= */
+/* 14. BANNER                                    */
+/* ============================================= */
+.banner .banner-inner {
+    background: linear-gradient(rgba(253, 248, 234, 0.9), rgba(253, 248, 234, 0.9)),
+        url(../img/bg.jpg) center center no-repeat !important;
+    background-size: cover !important;
+}
+
+.banner .banner-inner::before {
+    border-top: 150px solid var(--edg-primary) !important;
+}
+
+.banner .banner-inner::after {
+    border-bottom: 150px solid var(--edg-primary-dark) !important;
+}
+
+/* ============================================= */
+/* 15. DONATE SECTION                            */
+/* ============================================= */
+.donate .donate-text {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url(../img/bg.jpg) center center no-repeat !important;
+}
+
+.donate .donate-text::before {
+    border-top: 150px solid var(--edg-secondary) !important;
+}
+
+.donate .donate-text::after {
+    border-bottom: 150px solid var(--edg-primary) !important;
+}
+
+.donate-form.bg-primary {
+    background-color: var(--edg-primary-dark) !important;
+}
+
+.donate .donate-form .btn-group .btn {
+    color: var(--edg-dark-text) !important;
+}
+
+.donate .donate-form .btn-group .btn-check:checked+.btn {
+    background-color: var(--edg-white) !important;
+    color: var(--edg-primary) !important;
+    font-weight: 700;
+}
+
+/* ============================================= */
+/* 16. TEAM                                      */
+/* ============================================= */
+.team-item .team-social .btn-primary {
+    background-color: var(--edg-secondary) !important;
+    border-color: var(--edg-secondary) !important;
+    color: var(--edg-white) !important;
+}
+
+.team-item .team-social .btn-primary:hover {
+    background-color: var(--edg-primary) !important;
+    color: var(--edg-gold-light) !important;
+}
+
+.team-item h3 {
+    color: var(--edg-primary-dark) !important;
+}
+
+/* ============================================= */
+/* 17. TESTIMONIAL                               */
+/* ============================================= */
+.testimonial-img::before {
+    background-color: var(--edg-primary) !important;
+}
+
+.testimonial-carousel .owl-prev,
+.testimonial-carousel .owl-next {
+    background: var(--edg-primary-dark) !important;
+    color: var(--edg-white) !important;
+}
+
+.testimonial-carousel .owl-prev:hover,
+.testimonial-carousel .owl-next:hover {
+    background: var(--edg-secondary) !important;
+}
+
+.testimonial-text .fa-star {
+    color: var(--edg-gold-light) !important;
+}
+
+/* ============================================= */
+/* 18. VIDEO PLAY BUTTON                         */
+/* ============================================= */
+.btn-play,
+.btn-play:before,
+.btn-play:after {
+    background: var(--edg-primary) !important;
+}
+
+.btn-play span {
+    border-left: 16px solid var(--edg-white) !important;
+}
+
+.bg-primary .btn-play,
+.bg-primary .btn-play:before,
+.bg-primary .btn-play:after {
+    background: var(--edg-primary-dark) !important;
+}
+
+/* ============================================= */
+/* 19. NEWSLETTER                                */
+/* ============================================= */
+.container-fluid.bg-primary.pt-5.mt-5,
+.container-fluid.bg-primary.py-5.mt-5 {
+    background-color: var(--edg-primary) !important;
+}
+
+.container-fluid.bg-primary h1 {
+    color: var(--edg-white) !important;
+}
+
+.container-fluid.bg-primary p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.container-fluid.bg-primary .btn-lg-square i {
+    color: var(--edg-primary) !important;
+}
+
+/* ============================================= */
+/* 20. FOOTER                                    */
+/* ============================================= */
+.footer {
+    background: linear-gradient(rgba(5, 19, 17, 0.96), rgba(5, 19, 17, 0.96)),
+        url(../img/bg-footer.jpg) center center no-repeat !important;
+    background-size: cover !important;
+}
+
+.footer .btn.btn-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--edg-gold-light) !important;
+}
+
+.footer .btn.btn-link::before {
+    color: var(--edg-secondary) !important;
+}
+
+.footer .btn-primary {
+    background-color: var(--edg-secondary) !important;
+    border-color: var(--edg-secondary) !important;
+}
+
+.footer .btn-primary:hover {
+    background-color: var(--edg-gold-dark) !important;
+    border-color: var(--edg-gold-dark) !important;
+}
+
+.footer h4,
+.footer h6 {
+    color: var(--edg-white) !important;
+}
+
+.footer p,
+.footer span {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* ============================================= */
+/* 21. BACK TO TOP BUTTON                        */
+/* ============================================= */
+.back-to-top.btn-primary {
+    background-color: var(--edg-primary) !important;
+    border-color: var(--edg-primary) !important;
+}
+
+.back-to-top.btn-primary:hover {
+    background-color: var(--edg-gold-dark) !important;
+    border-color: var(--edg-gold-dark) !important;
+}
+
+/* ============================================= */
+/* 22. CAROUSEL / SLIDER                         */
+/* ============================================= */
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+    background: var(--edg-secondary) !important;
+    color: var(--edg-white) !important;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+    background: var(--edg-primary-dark) !important;
+}
+
+/* ============================================= */
+/* 23. PAGINATION (RETAIL)                       */
+/* ============================================= */
+.page-item.active .page-link {
+    background-color: var(--edg-primary) !important;
+    border-color: var(--edg-primary) !important;
+    color: var(--edg-white) !important;
+}
+
+.page-link {
+    color: var(--edg-primary) !important;
+}
+
+.page-link:hover {
+    color: var(--edg-orange-core) !important;
+}
+
+/* ============================================= */
+/* 24. ACCORDION (TEAM PAGE)                     */
+/* ============================================= */
+.accordion-button:not(.collapsed) {
+    background-color: var(--edg-primary) !important;
+    color: var(--edg-white) !important;
+}
+
+.accordion-button:focus {
+    border-color: var(--edg-secondary) !important;
+    box-shadow: 0 0 0 0.25rem rgba(15, 130, 49, 0.2) !important;
+}
+
+.team-card .card-body {
+    border-top: 3px solid var(--edg-secondary) !important;
+}
+
+/* ============================================= */
+/* 25. RED ACCENT – tiny amount (where needed)   */
+/* ============================================= */
+/* Modals close button, error states only */
+.btn-close:hover {
+    color: var(--edg-red-accent) !important;
+}
+
+.text-danger {
+    color: var(--edg-red-accent) !important;
+}
+
+/* ============================================= */
+/* 26. CUSTOM SCROLLBAR (optional)               */
+/* ============================================= */
+::-webkit-scrollbar-track {
+    background: var(--edg-light-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--edg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--edg-primary);
+}
+
+/* ============================================= */
+/* 27. SPINNER                                   */
+/* ============================================= */
+.spinner-border.text-primary {
+    color: var(--edg-secondary) !important;
+}
+
+/* ============================================= */
+/* 28. SERVICE / TESTIMONIAL TITLE BACKGROUND    */
+/* ============================================= */
+.service-title,
+.testimonial-title {
+    background: linear-gradient(rgba(24, 65, 31, 0.6), rgba(24, 65, 31, 0.6)),
+        url(../img/bg.jpg) center center no-repeat !important;
+    background-size: cover !important;
+}
+
+.service-title h1,
+.testimonial-title h1,
+.service-title p,
+.testimonial-title p {
+    color: var(--edg-white) !important;
+}

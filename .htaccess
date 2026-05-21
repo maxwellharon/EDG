@@ -1,0 +1,13 @@
+# Redirect non-www to www (OR remove the # to use www)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^edendestinygroup\.org$ [NC]
+RewriteRule ^(.*)$ https://www.edendestinygroup.org/$1 [L,R=301]
+
+# OR redirect www to non-www (uncomment this, comment the above)
+# RewriteCond %{HTTP_HOST} ^www\.edendestinygroup\.org$ [NC]
+# RewriteRule ^(.*)$ https://edendestinygroup.org/$1 [L,R=301]
+
+# Remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} /$ [NC]
+RewriteRule ^(.*)/$ /$1 [L,R=301]
