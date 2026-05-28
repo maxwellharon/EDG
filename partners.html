@@ -55,6 +55,20 @@
             box-shadow: 0 12px 25px rgba(0,0,0,0.07);
             border-color: #BF6212;
         }
+        /* Adjusted for actual logos - rectangular with rounded corners, not circular */
+        .partner-logo-img {
+            width: auto;
+            max-width: 140px;
+            height: 70px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 1rem auto;
+            transition: transform 0.3s ease;
+        }
+        .partner-grid-card:hover .partner-logo-img {
+            transform: scale(1.05);
+        }
+        /* Fallback for partners without a logo image – keeps the circular icon */
         .partner-logo-placeholder {
             width: 80px;
             height: 80px;
@@ -78,6 +92,10 @@
                 width: 65px;
                 height: 65px;
                 font-size: 2rem;
+            }
+            .partner-logo-img {
+                max-width: 110px;
+                height: 55px;
             }
         }
         .testimonial-partner {
@@ -197,10 +215,10 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="d-none d-lg-flex ms-auto">
-                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="https://www.instagram.com/edendestinygroup_?igsh=M2hrMmhkaDViamtv!"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="https://www.facebook.com/profile.php?id=61590661520751  !"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="https://www.linkedin.com/company/eden-destiny-group-ltd/!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </nav>
@@ -229,8 +247,8 @@
                 <div class="col-lg-7">
                     <p class="section-title bg-white text-start text-primary pe-3">Collaborative Ecosystem</p>
                     <h1 class="display-6 mb-4">Trusted by global & local partners</h1>
-                    <p>Eden Destiny Group’s work is powered by a vibrant network of partners ,  from international foundations and government agencies to grassroots community organizations. Together we transform youth livelihoods, mental wellness, creative enterprise, and inclusive education across Kenya.</p>
-                    <p>We believe in co-creation and long-term relationships. Our partners receive transparent reporting, shared visibility, and measurable SDG impact. Whether you represent a CSR department, a development finance institution, a UN agency, or a local school ,  there is a place for you in our ecosystem.</p>
+                    <p>Eden Destiny Group's work is powered by a vibrant network of partners , from international foundations and government agencies to grassroots community organizations. Together we transform youth livelihoods, mental wellness, creative enterprise, and inclusive education across Kenya.</p>
+                    <p>We believe in co-creation and long-term relationships. Our partners receive transparent reporting, shared visibility, and measurable SDG impact. Whether you represent a CSR department, a development finance institution, a UN agency, or a local school , there is a place for you in our ecosystem.</p>
                     <div class="d-flex flex-wrap mt-4 gap-3">
                         <a class="btn btn-primary py-3 px-4" href="#become-partner">Become a Partner</a>
                         <a class="btn btn-secondary py-3 px-4" href="donation.html">Support a Programme</a>
@@ -259,7 +277,9 @@
             <div class="row g-4 mb-5">
                 <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-music fa-2x"></i></div>
+                        <a href="https://oxicentertainment.com" target="_blank" rel="noopener">
+                            <img src="img/entertainment.jpg" alt="Oxic Entertainment Logo" class="partner-logo-img">
+                        </a>
                         <h5>Oxic Entertainment</h5>
                         <p class="small text-secondary">A&R & Content Partner</p>
                         <p class="small">Co-producers of Talanta Mtaani, driving original African content. Directorship synergy with EDG.</p>
@@ -267,15 +287,19 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.2s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-record-vinyl fa-2x"></i></div>
+                        <a href="https://www.varce-records.com" target="_blank" rel="noopener">
+                            <img src="img/varce.jpeg" alt="Varce Records Logo" class="partner-logo-img">
+                        </a>
                         <h5>Varce Records</h5>
                         <p class="small text-secondary">Creative & Label Partner</p>
-                        <p class="small">“Very Creative Africans”. Talent incubation and pan-African artist distribution.</p>
+                        <p class="small">"Very Creative Africans". Talent incubation and pan-African artist distribution.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-chalkboard-user fa-2x"></i></div>
+                        <a href="https://www.talantamtaani.co.ke" target="_blank" rel="noopener">
+                            <img src="img/consortium.jpg" alt="Talanta Mtaani Logo" class="partner-logo-img">
+                        </a>
                         <h5>Talanta Mtaani Consortium</h5>
                         <p class="small text-secondary">Youth Empowerment Flagship</p>
                         <p class="small">National TV talent search (5 seasons) + life skills curriculum. EDG is consortium lead.</p>
@@ -283,7 +307,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.4s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-book-open fa-2x"></i></div>
+                        <a href="https://www.booksntrunks.org" target="_blank" rel="noopener">
+                            <img src="img/b&k.png" alt="Books & Trunks Logo" class="partner-logo-img">
+                        </a>
                         <h5>Books & Trunks Initiative</h5>
                         <p class="small text-secondary">Education Partner</p>
                         <p class="small">HEAL.READ.GROW. co-implementer, focusing on literacy and reading corners in Kiambu.</p>
@@ -298,35 +324,45 @@
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-building fa-2x"></i></div>
+                        <a href="https://www.labour.go.ke" target="_blank" rel="noopener">
+                            <img src="img/banner2.png" alt="Ministry of Labour Logo" class="partner-logo-img">
+                        </a>
                         <h5>Ministry of Youth & Creative Economy</h5>
                         <p>Policy & program alignment, co-hosting of national talent auditions.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-city fa-2x"></i></div>
+                        <a href="https://nairobi.go.ke" target="_blank" rel="noopener">
+                            <img src="img/nairobi.png" alt="Nairobi City County Logo" class="partner-logo-img">
+                        </a>
                         <h5>Nairobi City County</h5>
                         <p>Partnership on mental health expos and public wellness events.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-tree fa-2x"></i></div>
+                        <a href="https://kiambu.go.ke" target="_blank" rel="noopener">
+                            <img src="img/kiambu.jpg" alt="Kiambu County Government Logo" class="partner-logo-img">
+                        </a>
                         <h5>Kiambu County Government</h5>
                         <p>Pilot of HEAL.READ.GROW. in Gacharage schools, direct community engagement.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-people-arrows fa-2x"></i></div>
+                        <a href="https://www.socialprotection.go.ke" target="_blank" rel="noopener">
+                            <img src="img/socialprotection.jpg" alt="Social Protection Logo" class="partner-logo-img">
+                        </a>
                         <h5>State Department for Social Protection</h5>
                         <p>Referrals for PWD inclusion in creative arts programmes.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-school fa-2x"></i></div>
+                        <a href="https://www.education.go.ke" target="_blank" rel="noopener">
+                            <img src="img/MOE.png" alt="Ministry of Education Logo" class="partner-logo-img">
+                        </a>
                         <h5>Ministry of Education (MOE)</h5>
                         <p>Integration of creative skills syllabus pilot.</p>
                     </div>
@@ -339,37 +375,47 @@
                     <h3 class="mb-4"><i class="fa fa-globe text-primary me-2"></i>Foundations & UN Agencies</h3>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="partner-grid-card">
-            <div class="partner-logo-placeholder"><i class="fas fa-hand-holding-heart fa-2x"></i></div>
-            <h5>Inclusion Unfolding Africa</h5>
-            <p class="small text-secondary">Strategic Inclusion Partner</p>
-            <p class="small">Advancing disability rights, gender equity, and tailored economic empowerment opportunities for women and girls across East Africa.</p>
-        </div>
-    </div>
-                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fab fa-united-nations fa-2x"></i></div>
+                        <a href="https://www.inclusionunfolding.org" target="_blank" rel="noopener">
+                            <img src="img/inclusion.png" alt="Inclusion Unfolding Africa Logo" class="partner-logo-img">
+                        </a>
+                        <h5>Inclusion Unfolding Africa</h5>
+                        <p class="small text-secondary">Strategic Inclusion Partner</p>
+                        <p class="small">Advancing disability rights, gender equity, and tailored economic empowerment opportunities for women and girls across East Africa.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.15s">
+                    <div class="partner-grid-card">
+                        <a href="https://www.undp.org/kenya" target="_blank" rel="noopener">
+                            <img src="img/undp.png" alt="UNDP Kenya Logo" class="partner-logo-img">
+                        </a>
                         <h5>UNDP Kenya</h5>
                         <p>SDG acceleration, youth innovation grants.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.2s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-hand-holding-heart fa-2x"></i></div>
+                        <a href="https://wellcome.org" target="_blank" rel="noopener">
+                            <img src="img/wellcome.png" alt="UNDP Kenya Logo" class="partner-logo-img">
+                        </a>
                         <h5>Wellcome Trust</h5>
                         <p>Mental health advocacy & research translation through Wellness Destiny.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.25s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-female fa-2x"></i></div>
+                        <a href="https://www.unwomen.org" target="_blank" rel="noopener">
+                            <img src="img/unwomen.png" alt="UN Women Logo" class="partner-logo-img">
+                        </a>
                         <h5>UN Women</h5>
                         <p>Women in creative leadership and economic empowerment.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.4s">
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
                     <div class="partner-grid-card">
-                        <div class="partner-logo-placeholder"><i class="fas fa-graduation-cap fa-2x"></i></div>
+                        <a href="https://mastercardfdn.org" target="_blank" rel="noopener">
+                            <img src="img/mastercard.png" alt="Mastercard Foundation Logo" class="partner-logo-img">
+                        </a>
                         <h5>Mastercard Foundation</h5>
                         <p>Scholarships and edutainment programmes targeting young Africans.</p>
                     </div>
@@ -382,16 +428,40 @@
                     <h3 class="mb-4"><i class="fa fa-briefcase text-primary me-2"></i>Corporate CSR Partners</h3>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeIn">
-                    <div class="partner-grid-card"><div class="partner-logo-placeholder"><i class="fab fa-safari fa-2x"></i></div><h5>Safaricom PLC</h5><p>Technology & connectivity for Talanta Mtaani digital auditions.</p></div>
+                    <div class="partner-grid-card">
+                        <a href="https://www.safaricom.co.ke" target="_blank" rel="noopener">
+                            <img src="img/safaricom.jpg" alt="Safaricom Logo" class="partner-logo-img">
+                        </a>
+                        <h5>Safaricom PLC</h5>
+                        <p>Technology & connectivity for Talanta Mtaani digital auditions.</p>
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeIn">
-                    <div class="partner-grid-card"><div class="partner-logo-placeholder"><i class="fas fa-coffee fa-2x"></i></div><h5>Java House</h5><p>Wellness events sponsorship & venue partnership.</p></div>
+                    <div class="partner-grid-card">
+                        <a href="https://www.javahouseafrica.com" target="_blank" rel="noopener">
+                            <img src="img/java.jpeg" alt="Java House Logo" class="partner-logo-img">
+                        </a>
+                        <h5>Java House</h5>
+                        <p>Wellness events sponsorship & venue partnership.</p>
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeIn">
-                    <div class="partner-grid-card"><div class="partner-logo-placeholder"><i class="fas fa-mobile-alt fa-2x"></i></div><h5>Airtel Kenya</h5><p>Connectivity & mobile donations.</p></div>
+                    <div class="partner-grid-card">
+                        <a href="https://www.airtelkenya.com" target="_blank" rel="noopener">
+                            <img src="img/airtel.jpeg" alt="Airtel Kenya Logo" class="partner-logo-img">
+                        </a>
+                        <h5>Airtel Kenya</h5>
+                        <p>Connectivity & mobile donations.</p>
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeIn">
-                    <div class="partner-grid-card"><div class="partner-logo-placeholder"><i class="fas fa-chart-line fa-2x"></i></div><h5>KCB Foundation</h5><p>Entrepreneurship training for creatives.</p></div>
+                    <div class="partner-grid-card">
+                        <a href="https://kcbgroup.com/foundation" target="_blank" rel="noopener">
+                            <img src="img/kcb.png" alt="KCB Foundation Logo" class="partner-logo-img">
+                        </a>
+                        <h5>KCB Foundation</h5>
+                        <p>Entrepreneurship training for creatives.</p>
+                    </div>
                 </div>
             </div>
 
@@ -400,9 +470,33 @@
                 <div class="col-12">
                     <h3 class="mb-4"><i class="fa fa-children text-primary me-2"></i>Schools & Grassroots Organizations</h3>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn"><div class="partner-grid-card"><div class="partner-logo-placeholder"><i class="fas fa-school fa-2x"></i></div><h5>Gacharage Primary Schools (Kiambu)</h5><p>Pilot site for HEAL.READ.GROW. – 8 partner schools.</p></div></div>
-                <div class="col-lg-4 col-md-6 wow fadeIn"><div class="partner-grid-card"><div class="partner-logo-placeholder"><i class="fas fa-hands-helping fa-2x"></i></div><h5>Uweza Foundation</h5><p>Community arts & after-school programs in Kibera.</p></div></div>
-                <div class="col-lg-4 col-md-6 wow fadeIn"><div class="partner-grid-card"><div class="partner-logo-placeholder"><i class="fas fa-wheelchair fa-2x"></i></div><h5>United Disabled Persons of Kenya (UDPK)</h5><p>Inclusive casting & accessibility advocacy for Boda Boda series.</p></div></div>
+                <div class="col-lg-4 col-md-6 wow fadeIn">
+                    <div class="partner-grid-card">
+                        <a href="#" target="_blank" rel="noopener">
+                            <div class="partner-logo-placeholder"><i class="fas fa-school fa-2x"></i></div>
+                        </a>
+                        <h5>Gacharage Primary Schools (Kiambu)</h5>
+                        <p>Pilot site for HEAL.READ.GROW. – 8 partner schools.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeIn">
+                    <div class="partner-grid-card">
+                        <a href="https://www.uwezafoundation.org" target="_blank" rel="noopener">
+                            <img src="img/uweza.jpg" alt="Uweza Foundation Logo" class="partner-logo-img">
+                        </a>
+                        <h5>Uweza Foundation</h5>
+                        <p>Community arts & after-school programs in Kibera.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeIn">
+                    <div class="partner-grid-card">
+                        <a href="https://www.udpkenya.org" target="_blank" rel="noopener">
+                            <img src="img/udpk.png" alt="UDPK Logo" class="partner-logo-img">
+                        </a>
+                        <h5>United Disabled Persons of Kenya (UDPK)</h5>
+                        <p>Inclusive casting & accessibility advocacy for Boda Boda series.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -422,7 +516,7 @@
                 </div>
                 <div class="testimonial-partner">
                     <i class="fa fa-quote-left"></i>
-                    <p class="mb-4">The HEAL.READ.GROW. initiative has transformed reading culture and mental wellness in our schools. EDG’s co-design with Books & Trunks is impactful and sustainable.</p>
+                    <p class="mb-4">The HEAL.READ.GROW. initiative has transformed reading culture and mental wellness in our schools. EDG's co-design with Books & Trunks is impactful and sustainable.</p>
                     <div><h6 class="text-primary mb-0">Mr. Peter Njuguna</h6><small>Headteacher, Gacharage Primary</small></div>
                 </div>
                 <div class="testimonial-partner">
@@ -444,7 +538,7 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-7 text-white">
-                    <h2 class="text-white display-6 mb-3">Invest in Africa’s Creative & Social Future</h2>
+                    <h2 class="text-white display-6 mb-3">Invest in Africa's Creative & Social Future</h2>
                     <p class="lead mb-4">Join a growing ecosystem of foundations, government bodies, and socially responsible corporations.</p>
                     <div class="row g-4 mb-4 benefit-list">
                         <div class="col-sm-6"><i class="fa fa-check-circle me-2"></i> Tax-efficient partnership models</div>
